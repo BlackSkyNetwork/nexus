@@ -1,6 +1,17 @@
-# Website
+# Black Sky Nexus
+Black Sky Nexus is a resource for minimizing dystopia.
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+## Contributing to the docs
+
+### Wiki
+
+The wiki docs are located at [/docs/wiki](/docs/wiki).
+
+### Zine
+
+The zine docs are located at [/docs/zine](/docs/zine).
+
+## Running the web project
 
 ### Installation
 
