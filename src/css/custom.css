@@ -1,0 +1,213 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+
+@import url('https://use.typekit.net/ich0fbq.css');
+
+
+:root {
+  --ifm-color-primary: #FA36C3;
+  --ifm-color-primary-dark: #f918ba;
+  --ifm-color-primary-darker: #f90ab6;
+  --ifm-color-primary-darkest: #d00597;
+  --ifm-color-primary-light: #fb54cc;
+  --ifm-color-primary-lighter: #fb62d0;
+  --ifm-color-primary-lightest: #fc8fde;
+  --ifm-code-font-size: 95%;
+  --ifm-font-size-base: 110%;
+  --ifm-font-family-base: roboto, sans-serif;
+  --ifm-font-family-monospace: roboto-mono, monospace;
+  --ifm-spacing-horizontal: 1.6rem;
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #FA36C3;
+  --ifm-color-primary-dark: #f918ba;
+  --ifm-color-primary-darker: #f90ab6;
+  --ifm-color-primary-darkest: #d00597;
+  --ifm-color-primary-light: #fb54cc;
+  --ifm-color-primary-lighter: #fb62d0;
+  --ifm-color-primary-lightest: #fc8fde;
+  --ifm-font-color-base: #ddd;
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero {
+  background-color: var(--ifm-background-color);
+  --ifm-hero-text-color: var(--ifm-color-primary);
+}
+
+.hero__subtitle {
+  font-family: novecento-sans, sans-serif;
+  color: white;
+  font-size: 2.5em;
+}
+
+.footer {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 400;
+  font-size: 0.85rem;
+  background-color: var(--ifm-background-color);
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.hero__title {
+  font-family: masqualero-stencil, sans-serif;
+  font-weight: 400;
+  font-size: 5.2em;
+}
+
+.container {
+  padding-top:0px;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: forma-djr-deck, sans-serif;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+h2 {
+  font-size: 2.3rem;
+}
+
+h3 {
+  font-size: 2.0rem;
+}
+
+h4 {
+  font-size: 1.8rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-family: novecento-sans, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.table-of-contents, .menu__link {
+  font-family: forma-djr-deck, sans-serif;
+  letter-spacing: 1px;
+} 
+
+p {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 400;
+  font-size: 1.07rem;
+  text-rendering: optimizeLegibility;
+}
+
+.markdown ul {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 400;
+  font-size: 1.07rem;
+  text-rendering: optimizeLegibility;
+}
+
+
+.table-of-contents {
+  font-size: 85%;
+}
+
+.markdown h1:first-child{
+  font-family: lisbeth-display, sans-serif;
+  letter-spacing: 1px;
+  text-align: center;
+  --ifm-h1-font-size: 3.8rem;
+}
+
+.navbar {
+  background-color: var(--ifm-background-color);
+  font-family: masqualero-stencil, sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+  font-size: 170%;
+}
+
+.hero .button {
+  font-family: lisbeth-display, sans-serif;
+  font-size: 140%;
+  border-radius: 2px;
+  background-color: var(--ifm-background-color);
+  color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+blockquote p {
+  color: var(--ifm-color-primary-lightest);
+  font-family: forma-djr-deck, sans-serif;
+  font-weight: 500;
+  font-style: italic;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+blockquote {
+  border-color: var(--ifm-color-primary-lightest);
+}
+
+.zine-index
+{
+  padding-top: 1rem;
+  display: block;
+  text-align: center;
+}
+.zine-index a {
+  font-family: forma-djr-deck, sans-serif;
+  letter-spacing: 1px;
+  font-size: 2.4rem;
+  color: var(--ifm-font-color-base);
+  text-decoration: underline;
+}
+
+.doc-subtitle {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: forma-djr-deck, sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+
+.markdown code {
+  background-color: rgb(32, 32, 33);
+  color: var(--ifm-color-primary-lightest);
+}
+
+.blogvid {
+  padding:56.25% 0 0 0;
+  position:relative;
+}
+
+iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  padding-bottom: 1rem;
+  width:100%;
+  height:100%;
+}
