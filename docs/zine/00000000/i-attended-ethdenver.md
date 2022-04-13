@@ -1,10 +1,10 @@
 ---
 sidebar_position: 3
-sidebar_label: 'That One Time I Attend ETHDenver Not Knowing What a Blockchain is...'
+sidebar_label: 'That One Time I Attended ETHDenver Not Knowing What a Blockchain is...'
 tags: [Editorial, Newcomers]
 ---
 
-# That One Time I Attend ETHDenver Not Knowing What a Blockchain is...
+# That One Time I Attended ETHDenver Not Knowing What a Blockchain is...
 <span class="doc-subtitle">...and Left With a Newfound Respect for the Crypto Community</span>
 
 ###### By E. Øss
