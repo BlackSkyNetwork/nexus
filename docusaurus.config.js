@@ -13,7 +13,7 @@ const config = {
   organizationName: 'BlackSkyNetwork', // Usually your GitHub org/user name.
   projectName: 'nexus', // Usually your repo name.
   trailingSlash: false,
-  deploymentBranch: 'main',
+  deploymentBranch: 'github-pages',
   presets: [
     [
       'classic',
