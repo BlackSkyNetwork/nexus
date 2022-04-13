@@ -12,7 +12,8 @@ const config = {
   favicon: 'img/favicon.ico',
   organizationName: 'BlackSkyNetwork', // Usually your GitHub org/user name.
   projectName: 'nexus', // Usually your repo name.
-
+  trailingSlash: false,
+  deploymentBranch: 'main',
   presets: [
     [
       'classic',
