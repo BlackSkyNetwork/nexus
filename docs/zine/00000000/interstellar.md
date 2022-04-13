@@ -5,7 +5,7 @@ sidebar_label: 'Interstellar'
 
 # Interstellar
 ###### By Giulio Prisco
-![interstellar](../../img/interstellar.png)
+![interstellar](../../img/interstellar-head.png)
 
 
 Some people think that we should abandon our dreams to go to the stars. Interstellar spaceflight, they say, is impossible.
@@ -17,6 +17,12 @@ Advances in space propulsion will enable “even interstellar missions,” notes
 > “And there are even more fantastic ideas around that will probably enable us to master gravitation itself and revolutionize space travel…”
 
 Incremental technology improvements and streamlined use of resources will open the interplanetary frontier. But for the interstellar frontier, we’ll need better space propulsion technologies.
+
+The book *“Frontiers of Propulsion Science”* [Millis 2009] presents recent advances in propulsion technology, and promising research steps to discover how radical propulsion breakthroughs might finally be achieved. In *“Centauri Dreams”* [Gilster 2004], Paul Gilster provides an overview that remains one of the best references on interstellar spaceflight, including the propulsion technologies outlined below.
+
+The same propulsion technologies that our interplanetary descendants will use to move efficiently through the solar system, such as nuclear fission or more likely nuclear fusion, perhaps using fuels laced with antimatter to make fusion more efficient, could take us to the nearest stars if we are willing to wait long enough. Multi-generation starships able to reach the nearest stars in centuries could be built with moderate technological improvements.
+
+But, even with efficient fusion propulsion, a faster starship would have to carry too much fuel to be viable. Antimatter propulsion [Forward 1995], much more efficient than nuclear fusion propulsion, would permit accelerating a starship to a significant fraction of the speed of light (ten percent or more), and decelerating to stop at the destination, with realistic amounts of fuel on board.
 
 ```
  .      .      .      .      .      .      .      .      .      .      .
@@ -47,12 +53,6 @@ Incremental technology improvements and streamlined use of resources will open t
  .       .       .       .       .       .       .       .       .
      .      .      .      .      .      .      .      .      .      .      .
 ```
-
-The book *“Frontiers of Propulsion Science”* [Millis 2009] presents recent advances in propulsion technology, and promising research steps to discover how radical propulsion breakthroughs might finally be achieved. In *“Centauri Dreams”* [Gilster 2004], Paul Gilster provides an overview that remains one of the best references on interstellar spaceflight, including the propulsion technologies outlined below.
-
-The same propulsion technologies that our interplanetary descendants will use to move efficiently through the solar system, such as nuclear fission or more likely nuclear fusion, perhaps using fuels laced with antimatter to make fusion more efficient, could take us to the nearest stars if we are willing to wait long enough. Multi-generation starships able to reach the nearest stars in centuries could be built with moderate technological improvements.
-
-But, even with efficient fusion propulsion, a faster starship would have to carry too much fuel to be viable. Antimatter propulsion [Forward 1995], much more efficient than nuclear fusion propulsion, would permit accelerating a starship to a significant fraction of the speed of light (ten percent or more), and decelerating to stop at the destination, with realistic amounts of fuel on board.
 
 Antimatter powered starships could reach the nearest stars in decades instead of centuries. We are unable to produce the required amounts of antimatter at this moment, but things could change. 
 

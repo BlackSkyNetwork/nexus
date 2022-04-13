@@ -5,14 +5,18 @@ tags: [Editorial, Newcomers]
 ---
 
 # I Attended EthDenver Not Knowing What a Blockchain is...
-<span class="doc-subtitle">And Left with Omicron and Hard Respect for the Crypto Community</span>
+<span class="doc-subtitle">And Left With Some Newfound Respect for the Crypto Community</span>
 
 ###### By E. Øss
 ![img](../../img/zine-ethdenver.png)
 
-Denver, Colorado - Feb 2022: I’m attending ETHDenver for the first time and I don’t even know what a blockchain is. By the time I leave this conference, I will have a vague but growing understanding of what a blockchain is as well as a positive case of COVID-19 I most definitely obtain at a mansion rager with other conference attendees. So bear with me, and enjoy the ride (or don’t, and don’t; it’s up to you). 
+###### Part 1
+Denver, Feb 2022 — I’m attending ETHDenver for the first time and I don’t even know what a blockchain is. By the time I leave this conference, I will have a vague but growing understanding of what a blockchain is as well as a positive case of COVID-19 I most definitely obtain at a mansion rager with other conference attendees. So bear with me, and enjoy the ride (or don’t, and don’t; it’s up to you). 
 
-For some context: I’ve spent the last two years living alone in the desert during the pandemic. My daily life is simple: I remotely operate a chatbot that schedules appointments part time and do remote freelance work another part of the time. I’m also a fiction writer and a painter for the other parts of the time. The core of what I do is multiple side hustles out of my studio apartment where I live with my cat Dennis who is abnormally small and especially whiney (I do love him).
+For some context: I’ve spent the last two years living alone in the high desert during the pandemic. My daily life is simple: I remotely operate a chatbot that schedules appointments part time and do remote freelance work another part of the time. I’m also a fiction writer and a painter for the other parts of the time. 
+
+See paintings below:
+
 
 My only pre-conference experiences with crypto counter culture are 1) my older brother berating me over the last decade that I “should really invest in crypto” when he has yet to invest himself and 2) I’ve recently done some freelance editing work for an emerging DAO and was paid in crypto for the first time, in DAI, a stable coin, the money I immediately transferred into US dollars because I’m too afraid to ride the waves. 
 

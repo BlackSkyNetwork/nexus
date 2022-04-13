@@ -1,9 +1,9 @@
 ---
 sidebar_position: 3
-sidebar_label: 'ValiDATE: Sexual Health Ledger'
+sidebar_label: 'ValiDATE: A Sexual Health Ledger'
 ---
 
 
 # A Word From Our Sponsors
 
-![img](../../img/validate3.png)
+![img](../../img/vDATEtransparent.png)

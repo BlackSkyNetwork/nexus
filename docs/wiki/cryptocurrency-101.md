@@ -3,7 +3,11 @@ sidebar_position: 2
 ---
 
 # Cryptocurrency 101
-Black Sky Nexus plans to create open source *Crypto 101* resources, but in the meantime, we have a few links that may be useful.
+Black Sky Nexus plans to maintain open source *Crypto 101* resources which will include original educational guides, in addition to curated links to external resources where appropriate.
+
+:::note Work in progress
+This resource is in an early draft mode. Contributions to make it better are very welcome! 
+:::
 
 ## Resources
 * Gemini maintains *Cryptopedia*, which includes some decent [Crypto 101 material](https://www.gemini.com/cryptopedia/story/crypto-101).
@@ -21,13 +25,15 @@ Black Sky Nexus plans to create open source *Crypto 101* resources, but in the m
 * [The Tyranny of Structurelessness](https://www.jofreeman.com/joreen/tyranny.htm) By Jo Freeman
 * [Meditations on Moloch](https://slatestarcodex.com/2014/07/30/meditations-on-moloch/) By Scott Alexander
 
-## Learn Ethereum
+## Bitcoin & Ethereum Deep Dives
+* [The Bitcoin White Paper Explained](https://medium.com/coinmonks/bitcoin-white-paper-explained-part-1-4-16cba783146a) By Sava Gerov
 * [Ethereum Explained: A Guide to the World Supercomputer](https://www.gemini.com/cryptopedia/ethereum-blockchain-smart-contracts-dapps) by Cryptopedia
 * [What is Gas and How to Save on Fees?](https://thedefiant.io/what-is-gas-and-how-to-save-on-fees/) By The Defiant
+* [Andreas M. Antonopoulos's Educational Videos](https://aantonop.com/educational-videos/)
 
 ## Privacy
 * [How To Use DeFi Anonymously (Ish)](https://newsletter.thedefiant.io/p/for-all-you-degens-farming-in-public?s=r) By Rachel-Rose O’Leary
-* [How to Anonymise Ethereum](../../wiki/how-to-anonymise-eth) By Rachel-Rose O’Leary, Stellar Magnet
+* [How to Anonymize Ethereum](../../wiki/how-to-anonymize-eth) By Rachel-Rose O’Leary, Stellar Magnet
 
 ## DAOs
 ### General
@@ -38,7 +44,7 @@ Black Sky Nexus plans to create open source *Crypto 101* resources, but in the m
 
 ### Contributing
 * [How to Contribute to DAOs](https://www.youtube.com/watch?v=anDAtWrhDnE) By Tracheopteryx
-* [How to Join a DAO Communuty](https://wiki.metagame.wtf/docs/playbooks/how-to-join-a-dao-community) by @Techniciann9ne
+* [How to Join a DAO Community](https://wiki.metagame.wtf/docs/playbooks/how-to-join-a-dao-community) by @Techniciann9ne
 
 ### Conflict Resolution
 * [The Foundations of Decent(ralized) HR](https://medium.com/@loietaylor/the-foundations-of-decent-ralized-hr-3b58f6a52d31) By Loie Taylor
