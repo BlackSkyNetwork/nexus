@@ -60,7 +60,7 @@ But the AI is definitely a new thing which exists, and it's already around us. I
 
 ###### 2022
 
-##### Can you tell us what sort of feelings or entities you were channeling during the _Saturnalien_ performance NFT?
+##### Can you tell us what sort of feelings or entities you were channeling during the _Saturnalian_ performance NFT?
 
 The performance was about extraterrestrial or other dimensional intelligence and also channeling a transformation between human and android. More profoundly, it was about channeling the energy from the storm of the south pole of Saturn.
 
