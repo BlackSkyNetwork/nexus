@@ -8,7 +8,7 @@ sidebar_label: 'Attila Csihar Channels Dark Saturnalian Energy...'
 
 ###### By Black Sky Nexus
 
-<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/PydFb8GvBuk" title="YouTube video player" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/PydFb8GvBuk" title="YouTube video player" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 Void ov Voices is a project by Attila Csihar, best known as the singer of seminal black metal band Mayhem, as well as his numerous contributions to other bands notably Sunn O))) and Tormentor. 
 

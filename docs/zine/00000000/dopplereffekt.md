@@ -7,7 +7,7 @@ sidebar_position: 8
 
 ###### By Sun Deep
 
-<iframe width="840" height="472.5" src="https://www.youtube-nocookie.com/embed/5cjHTHDifvk" title="YouTube video player" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<iframe class="video-embed" src="https://www.youtube-nocookie.com/embed/5cjHTHDifvk" title="YouTube video player" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 
 On December 20, 2020, Dopplereffekt premiered their piece _Relativistic Singularity_ during the online event Azimuth, which was viewed live in the metaverse by an audience of avatars around the globe.
 
