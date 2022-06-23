@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[6755],{6671:function(a){a.exports=JSON.parse('{"name":"AI","permalink":"/tags/ai","docs":[{"id":"zine/00000000/how-to-end-labor","title":"Exploring Potential Paths to Ending Labor","description":"By Stellar Magnet","permalink":"/zine/00000000/how-to-end-labor"}],"allTagsPath":"/tags"}')}}]);

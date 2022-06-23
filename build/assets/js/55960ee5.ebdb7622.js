@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[4121],{8070:function(e){e.exports=JSON.parse('[{"name":"Editorial","permalink":"/tags/editorial","count":1},{"name":"Newcomers","permalink":"/tags/newcomers","count":1},{"name":"Ideas","permalink":"/tags/ideas","count":1}]')}}]);
