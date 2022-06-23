@@ -1,0 +1,68 @@
+---
+sidebar_position: 7
+sidebar_label: 'ET is smarter than Enrico Fermi, and knows much more'
+tags: [Extraterrestrial, Fermi Paradox]
+---
+
+# ET is smarter than Enrico Fermi, and knows much more
+<span class="doc-subtitle">Fermi paradox, really? Some imagination please!</span>
+
+###### By Giulio Prisco
+![img](../../img/et.png)
+
+I love [UFOs](https://en.wikipedia.org/wiki/Unidentified_flying_object) (aka UAPs - Unidentified Aerial Phenomena) and alien contact stories, and I think these stories are an important cultural phenomenon (see below).
+
+But I tend not to take UFOs too seriously.
+
+I don’t take the [Fermi paradox](https://en.wikipedia.org/wiki/Fermi_paradox) too seriously either, and for the same reasons.
+
+“[Where is everybody?](https://www.amazon.com/Great-Silence-Science-Philosophy-Paradox/dp/0199646309),” asked [Enrico Fermi](https://en.wikipedia.org/wiki/Enrico_Fermi) in a lunchtime conversation on extraterrestrial intelligence and “topics such as interstellar - and even superluminal - travel.”
+
+I think the universe is teeming with life. But then why don’t we see evidence of alien civilizations? Why [SETI](https://en.wikipedia.org/wiki/Search_for_extraterrestrial_intelligence) programs haven’t detected alien messages so far? Why aren’t little green ETs here and now?
+
+See _[The Great Silence: Science and Philosophy of Fermi's Paradox](https://www.amazon.com/Great-Silence-Science-Philosophy-Paradox/dp/0199646309)_ (2018), by Milan Ćirković, for a comprehensive discussion of the Fermi paradox.
+
+[Enrico Fermi was a scientific genius](https://www.amazon.com/Pope-Physics-Enrico-Fermi-Atomic-ebook/dp/B01ERPCB1O/) by current human standards, and his contemporaries knew and could do much more than their fathers. But today we know and can do much more than Fermi’s contemporaries.
+
+The internet, iPhones, Twitter, molecular biotech, genetic engineering, CRISPR, Neuralink, AlphaZero and other wonders of today are beyond Fermi and very much beyond the generations before Fermi. Our grandfathers would understand very little of our world, and their grandfathers would understand almost nothing. They would think that our world is a magic world.
+
+What can we achieve in a few more generations? In a few centuries? A few millennia? If we could see the world of the future, we would think of it as a magic world. But we realize that future magic is really technology, so far advanced (compared to ours) to be “[indistinguishable from magic](https://en.wikipedia.org/wiki/Clarke%27s_three_laws)” (in the words of [Sir Arthur Clarke](https://en.wikipedia.org/wiki/Arthur_C._Clarke)) from our perspective.
+
+Here’s what [Clarke said](https://en.wikipedia.org/wiki/2001:_A_Space_Odyssey_(novel)) about really advanced civilizations in the universe:
+
+> “In their ceaseless experimenting, they had learned to store knowledge in the structure of space itself, and to preserve their thoughts for eternity in frozen lattices of light. They could become creatures of radiation, free at last from the tyranny of matter. Now they were lords of the galaxy, and beyond the reach of time. They could rove at will among the stars, and sink like a subtle mist through the very interstices of space.”
+
+Following Sir Arthur, I don’t think really advanced aliens use primitive bodies or spaceships. They could be physically implemented as balls of quantum fields or (more likely) something even weirder, and move freely across space and time faster than light. They could be playing with the building blocks of space and time, and rewriting the laws of physics they don’t like.
+
+Similarly, I don’t think really advanced aliens use radio waves or other communication means that we could detect. I guess they use zeta waves, [defined by Carl Sagan](https://www.amazon.com/Varieties-Scientific-Experience-Personal-Search-ebook/dp/B004IATCJI/) as “something fantastic for communication that I can’t give you any details about, because it won’t be invented for another five thousand years.” Using zeta waves also for public broadcasts would limit the audience to advanced and mature civilizations only.
+
+Radio messages and UFOs can only come from aliens that 1) have already developed interstellar radio communications and starships, but 2) haven’t found anything better yet. It seems plausible that this time window lasts for only a few centuries, or a few millennia tops, which is nothing compared to cosmic time scales. If so, the vast majority of alien civilizations are either primitive compared to us, or much more advanced than us.
+
+Therefore, most of what we say about the Fermi paradox is not imaginative enough. We talk about a very small group of alien civilizations at a level of development comparable to ours, but we ignore the much larger group of alien civilizations that are much more advanced than us.
+
+Invisible and undetectable ball lightnings of alien consciousness seem more plausible to me than saucer shaped UFOs. Perhaps one is hovering above your head right now.
+
+Where is everybody? They could be right here, right now. IF (and this is the real and only IF), IF we are even remotely interesting to them, I guess they are right here, right now, undetectable from little primitive creatures like us. They know everything about us, and they are watching us all the time. I hope they are having fun.
+
+There are similarly imaginative scenarios in Ćirković’s book, e.g. “Bit-string invaders,” “Transcendence, transcension and related scenarios,” “A new cosmogony.” The latter is inspired by the works of the legendary [Stanisław Lem](https://en.wikipedia.org/wiki/Stanis%C5%82aw_Lem), a philosopher and science fiction writer whose aliens are, you know, really really alien.
+
+I guess we could send crewed missions to the nearest stars in a couple of centuries if we work hard enough and spend enough money.
+
+But would we choose to spend all that money on interstellar missions instead of other things? Not likely. Also, in a couple of centuries we could be able to [send uploaded humans or human/AI hybrids to the stars at a much lower cost](https://gizmodo.com/why-we-should-send-uploaded-astronauts-on-interstellar-5968280). It seems reasonable to wait until we reach that moderately advanced level, and it seems plausible that an alien civilization would reach the same conclusion.
+
+A wild card that could entirely change the game would be the discovery of affordable interstellar propulsion technology. But I think [mind uploading technology](https://en.wikipedia.org/wiki/Mind_uploading) will open the way to the stars more practically and cheaply anyway.
+
+I don’t entirely rule out UFOs and little green ETs and all that. Perhaps a moderately advanced alien civilization around a nearby star could send a small starship crewed by uploads and/or AIs to the solar system. The starship could use nanotechnology to build infrastructure, including robotic bodies for the crew and new alien uploads/AIs “emailed” to the solar system.
+
+Having said that, I think UFOs and alien contact stories are an important cultural phenomenon that points to the need to re-enchant today’s dull and boring “culture.”
+
+See _[American Cosmic](https://www.amazon.com/gp/product/B07LFL7QMG/)_ by Diana Pasulka for a fascinating study of UFO cultures. Pasulka says:
+
+> “When I began to focus on modern reports of UFO sightings and events, I was immediately immersed in a world where the religious impulse was alive and the formation of a new, unique form of religion was in process.”
+
+Area 51 is a place of power of this new religion. I guess no dead or living aliens are there to be found, but there is the power of cosmic imagination, and this power will take us to the stars.
+
+We won’t reach the stars in human bodies made of flesh and blood, I don’t think so. But waiting for mind uploading and the seriously weird sci/tech that will follow, we have a solar system into which human flesh and blood can, must, and will expand.
+
+Space expansion into the solar system will re-enchant and energize our culture, and prepare us for our awesome cosmic future. We’ll become a really advanced civilization in Clarke’s sense, and one day we’ll meet and greet other advanced civilizations among the stars.
+

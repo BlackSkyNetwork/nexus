@@ -1,5 +1,5 @@
 ---
-sidebar_position: 3
+sidebar_position: 2
 sidebar_label: 'That One Time I Attended ETHDenver Not Knowing What a Blockchain is...'
 tags: [Editorial, Newcomers]
 ---
