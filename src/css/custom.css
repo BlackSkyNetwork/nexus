@@ -8,6 +8,41 @@
 
 @import url('https://use.typekit.net/ich0fbq.css');
 
+@font-face {
+  font-family: "Antikvarika";
+  src: url("/static/fonts/lxio5etr.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Italiana";
+  src: url("/static/fonts/Italiana-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Dancing Script";
+  src: url("/static/fonts/DancingScript-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PF Square Sans Pro";
+  src: url("/static/fonts/pf\ square\ sans\ pro.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Carlito";
+  src: url("/static/fonts/Carlito-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
 
 :root {
   --ifm-color-primary: #FA36C3;
@@ -96,11 +131,44 @@
 }
 
 .markdown h1:first-child{
-  font-family: lisbeth-display, sans-serif;
-  letter-spacing: 1px;
+  font-family: "Carlito", sans-serif;
+  font-size: 3.6rem;
+  letter-spacing: 3px;
   text-align: center;
-  font-size: 3.8rem;
+  text-transform: uppercase;
+  font-style: normal;
 }
+
+.markdown h1:first-child::first-letter{
+  font-family: "Antikvarika";
+  font-size: 4rem;
+}
+
+.spec-char {
+  font-family: "Antikvarika";
+  font-size: 3.6rem;
+}
+
+.img-up {
+  margin-bottom: -7px;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.img-down {
+  margin-top: -7px;
+  margin-bottom: 1rem;
+  border: 0;
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  margin: 0px;
+  padding: 0px;
+}
+
 
 @media screen and (max-width: 996px) {
   .markdown h1:first-child{
@@ -226,11 +294,19 @@ blockquote {
 }
 
 
-
 .doc-subtitle {
   font-size: 1.8rem;
   font-weight: 500;
   font-family: forma-djr-deck, sans-serif;
+  letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+
+.poem {
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Dancing Script", sans-serif;
   letter-spacing: 1px;
   display: block;
   text-align: center;
@@ -245,12 +321,12 @@ iframe {
   position:relative;
   top:0;
   left:0;
-  padding-bottom: 1rem;
+  padding-bottom: 0rem;
 }
 
 .video-embed {
-  width: 840px;
-  height: 472.5px;
+  width: 933px;
+  height: 524.8px;
 }
 
 @media screen and (max-width: 996px) {
