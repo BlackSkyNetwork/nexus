@@ -6,6 +6,9 @@
 
 /* You can override the default Infima variables here. */
 
+
+/** FONTS **/
+
 @import url('https://use.typekit.net/ich0fbq.css');
 
 @font-face {
@@ -43,6 +46,47 @@
   font-style: normal;
 }
 
+
+@font-face {
+  font-family: "Avara_Bold";
+  src: url("/static/fonts/Avara-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avara_Bold Italic";
+  src: url("/static/fonts/Avara-BoldItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avara_Black";
+  src: url("/static/fonts/Avara-Black.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'vtf_victoriannaitalic';
+  src:  url('/static/fonts/vtf_victorianna_thin_talic-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+@font-face {
+  font-family: 'vtf_victoriannathin';
+  src: url('/static/fonts/vtf_victorianna_thin-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/** MAIN **/
 
 :root {
   --ifm-color-primary: #FA36C3;
@@ -141,7 +185,6 @@
 
 .markdown h1:first-child::first-letter{
   font-family: "Antikvarika";
-  font-size: 4rem;
 }
 
 .spec-char {
@@ -306,7 +349,7 @@ blockquote {
 .poem {
   font-size: 1.8rem;
   font-weight: 500;
-  font-family: "Dancing Script", sans-serif;
+  font-family: "vtf_victoriannathin", sans-serif;
   letter-spacing: 1px;
   display: block;
   text-align: center;
