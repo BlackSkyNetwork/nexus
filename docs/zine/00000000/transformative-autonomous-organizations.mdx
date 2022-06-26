@@ -18,10 +18,6 @@ import Header from '@site/docs/img/tao.gif';
 <div class="header"><img width="933px" src={Header} /></div>
 <ImgDown className="img-down" />
 
-:::note NOTE
-The following is a sample of an in-depth article in progress outlining and proposing a model for a new type of crypto-funded organization. The final article in the zine will be a longer, polished, analytic version of this model.
-:::
-
 A decentralized autonomous organization (DAO) is a group organized around a common mission that coordinates through a shared set of rules enforced via blockchain technology and social consensus. Over 4,800 DAOs have been created to date, managing over $7B in assets (based on current market value) <sup>[1](#references)</sup>.
 
 DAOs allow humans to experiment with organization design and economics with greater ease than traditional fiat-based organizations, since smart contracts and code are typically at the core of a DAO. They have the potential to scale organizations in a way that enables more worker-autonomy and squad wealth <sup>[2](#references)</sup>.
@@ -46,7 +42,7 @@ TAOs are **transformative**. As software-based organizations, their governance i
 
 TAOs are **autonomous**. Members of a TAO have the freedom to govern and control its affairs. TAOs intend to use artificial intelligence as a side kick, as opposed to an overlord, to reduce the work week and eventually, end labor.
 
-TAOs are **organizations**. A TAO is an organized body with a _meaningful purpose_, especially a society, association, or coalition that intends to make the exploitive and restrictive aspects of business and professionalism obsolete.
+TAOs are **organizations**. A TAO is an organized body with a _meaningful purpose_, especially a group, association, or coalition that intends to make the exploitive and restrictive aspects of business and professionalism obsolete.
 
 They are inspired by cooperatives, Jo Freeman’s _The Tyranny of Structurelessness_, writings of Abdullah Öcalan and Murray Bookchin, Rachel-Rose O’Leary’s [Lunarpunk thesis](https://www.egirlcapital.com/writings/107533289), and Robert Anton Wilson’s [RICH Economy](https://web.archive.org/web/20100613011108/http://whywork.org/rethinking/whywork/rawilson.html).
 
@@ -60,13 +56,13 @@ TAOs will share six pillars that are described below. If an organization adopts 
 
 
 ### Autonomously Adaptive
-TAOs are highly adaptive organizations, composed of an autonomous membership class that are able to transform their organization's governance to become more hierarchical or more distributed as needed, easily flipping between modes. Establishing and dismantling hierarchies is easy and acceptable, yet always a member decision. TAOs favor democratic voting over plutocracies. Voting models that are closer to _one person, one vote_ that provide voter anonymity, are favored over transparent models weighted based on capital contribution.
+TAOs are highly adaptive organizations, composed of an autonomous membership class that are able to transform their organization's governance to become more hierarchical or more distributed as needed, easily flipping between modes. Establishing and dismantling hierarchies is easy and acceptable, yet always a member decision. TAOs favor _incorruptible_ democratic, representative, or experimental blended decision-making models over pure _token-weighted plutocracies_. Voting models that are closer (yet not necessarily equal to) _one person, one vote_ that provide voter anonymity, are favored over transparent models weighted based on capital contribution.
 
 ### Optionally Private
 TAOs do not need to be fully transparent or open organizations. Privacy, secrecy, and anonymity may be necessary for some type of TAOs, while others will benefit from having more open operations. TAOs are not maximilists in either direction, although within an organization, anonymous voting is the standard primitive.
 
 ### Aim to End Labor
-TAOs are interested in building towards a society where labor has ended. When productivity gains are enabled by advancements in technology, then ideally lives should improve, as opposed to the current dystopia where for example, wages for blue collar workers do not accelerate in the same way as the price of housing. This pillar aims to catalyze a culture where we continously imagine how a world without labor functions, and to attempt experiments that will propel society towards a direction where one's basic needs are met when born into the world.
+TAOs are interested in building towards a society where labor has ended. When productivity gains are enabled by advancements in technology, then ideally lives should improve, as opposed to the current dystopia where for example, wages for blue collar workers do not accelerate in the same way as the price of housing. This pillar aims to catalyze a culture where we continuously imagine how a world without labor functions, and to attempt experiments that will propel society towards a direction where one's basic needs are met when born into the world.
 
 ### Concerned for the Cosmos
 TAOs are conscious of their relationship with the resources they extract from the cosmos and the labor conditions of their supply chain and they seek to ultimately maximize harmony over profits. In the beginning stages of TAO development (Years 1 - 5), it will be difficult for individual TAOs to do the best they can to maximize harmony, as the legacy systems are both pervasive and entrenched in pollution and slavery while harmonious models are more costly and potentially nonexistant. But the goal is that as more TAOs are created, that over time, maximizing harmony becomes easier and more affordable and legacy systems become obsolete. Nowadays, virtually all businesses and organizations are doing performative steps to signal "sustainability", "ecological awareness", etc. Guidelines to distinguish sincere methods from greenwashing will be important to uphold this pillar.
@@ -79,220 +75,48 @@ TAOs embrace being part of an evolving experiment in organization design and alt
 
 --- 
 
-_The rest of this paper will focus the most on the **Autonomously Adaptive** pillar of TAOs. This is definitely not a comprehensive design, as many areas still need to be elaborated on and investigated in a theoretical model. Comments and feedback are very appreciated (share them in the [#🔄-taos](https://discord.gg/ZqYAbA6BVY) channel)._
+_The rest of this paper will focus the most on the **Autonomously Adaptive** pillar of TAOs. This is definitely not a comprehensive design, as many areas still need to be elaborated on and investigated in practice. Comments and feedback are very appreciated (share them in the [#🔄-taos](https://discord.gg/ZqYAbA6BVY) channel)._
 
 
 ## TAOs are Autonomously Adaptive
+TAOs favor _incorruptible_ democratic, representative, or experimental blended decision-making models over pure _token-weighted plutocracies_. Essentially, decision-making models that are most effective at taking into account the needs of all stakeholder groups, while enabling voter anonymity, are desired over transparent models weighted based on capital contribution. One of the main differences between a TAO and a traditional DAO is that a TAO has two native transformation capabilities. One is called a _Leadership Transformation_, and that relates to transforming _how_ the TAO is governed. There other is called a _Structural Transformation_ and that relates to either 1) empowering or disempowering subsets of the TAO to be responsible for specialized functions or 2) formalizing collaborations and partnerships with other TAOs or DAOs. The next section describes these **autonomously adaptive** properties in more detail.
 
-### Governance Levels
+### Democratic-ish voting with strong privacy
+Anonymity is an important property for TAOs and since they are smart contract based organizations, a tradeoff has to be made when it comes to enabling both a _strong democracy_ and _strong privacy_. Since private, decentralized, and sybil-resistant identity solutions are at a very nascent stage of technological development, TAOs should consider initially favor voting models based on how much one is actively contributing to the organization, since one person, one vote is more technically challenging to achieve. In this use case, sybil resistance is based on the limits of human contribution. Some sample voting weights can be:
 
-One of the main differences between a TAO and a regular DAO is that a TAO will come pre-configured with multiple possible governance structures, or _Governance Levels_.
+* 1x - Earned an average of at least (x) tokens / week over the last (z) months 
+* 2x - Earned an average of [(x+1) to (y-1)] tokens / week over the last (z) months
+* 3x - Earned an average of (y) or more tokens / week over the last (z) months
 
-There are two main parameters that are taken into account in determining the possible governance levels, and that's the _Enabled Organization Configurations_ and _Enabled Leadership Bodies_.
-
-There are three possible _Organization Configurations_:
-
-**Single TAO (1)**: The TAO has a singular organizational body, with only a single smart contract for the TAO (e.g. funds are held in a singular treasury). 
-
-**Sub-TAOs (2)**: There are different guilds, aka sub-TAOs, responsible for different focus areas. An individual sub-TAO has autonomy over how it is governed. For example, the sub-TAO can transform from a member-led direct democracy to an organization where leadership functions are granted to a steward or set of stewards. Transformation votes will be controlled by sub-TAO members. There will be a smart contract per sub-TAO, enabling management of independent treasuries, yet the parent TAO has control over revoking funding from a sub-TAO.
-
-**TAO of TAOs (3)**: The TAO includes a distinct membership base that distributes funding to a coalition of multiple independent TAOs. The primary governance activities of the TAO are to 1) allocate funding to each member entity and 2) manage coalition membership. When the TAO awards funding to coalition members, it cannot be revoked. TAO of TAOs organizations can also include sub-TAOs with revocable treasuries that have responsibility over specific higher level functions of the coalition.
-
-The _Enabled Leadership Bodies_ are different stakeholder groups which can have potential control over the TAO’s primary functions. At the most basic level, this will include: **the membership class (A)**, an electable set of **multiple stewards (B)**, or an electable **singular steward (C)**. 
-
-Assuming all _Organization Configurations_ and all default _Leadership Bodies_ are enabled in the TAO, there would be 9 potential Governance Levels that the parent TAO can transform into:
-
-* Level 1A, Level 1B, Level 1C
-* Level 2A, Level 2B, Level 2C
-* Level 3A, Level 3B, Level 3C
-
-Whenever a TAO transforms from a Level 1x to a Level 2x or 3x organization, the assumption is that the TAO transforms from having a single smart contract to manage its funds to having one smart contract per activated sub-TAO, as Level 2 is when sub-TAOs become empowered to lead a particular focus area. This means that sub-TAOs will be able to manage independent treasuries and may eventually even grow big enough to warrant further fractalization for the sub-TAO to break up into more sub-TAOs within itself.
-
-Each governance level will come with preconfigured decision-making templates, but it's possible to modify the standard. For example, if an organization chooses to be a Level 2B organization yet deviates from the recommended permissions, they would be considered a Level 2B* organization or a _modified Level2B_ organization.
-
-_Sample Template: Level 2B Organization (Sub-TAOs, Steward-led)_
-
-A set of stewards elected by members has control over creating new sub-TAOs or inactivating them. The stewards also have authority over managing the TAO’s assets.
-
-<table>
-  <tr>
-   <td><strong>Permission</strong>
-   </td>
-   <td><strong>Minimum level</strong>
-   </td>
-   <td><strong>Owner</strong>
-   </td>
-   <td><strong>Modifiable?</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>Transform governance level
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>N
-   </td>
-  </tr>
-    <tr>
-   <td>Make changes to TAO parameters
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>N
-   </td>
-  </tr>
-  <tr>
-   <td>Dissolve the TAO
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>N
-   </td>
-  </tr>
-  <tr>
-   <td>Make changes to membership tiers and weights
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Make changes to token supply
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Join or leave a coalition
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Merge TAOs
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Make changes to membership class
-   </td>
-   <td>1
-   </td>
-   <td>Membership
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Manage the TAO’s assets
-   </td>
-   <td>1
-   </td>
-   <td>Steward(s)
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Activate a sub-TAO / Add a TAO
-   </td>
-   <td>2
-   </td>
-   <td>Steward(s)
-   </td>
-   <td>Y
-   </td>
-  </tr>
-  <tr>
-   <td>Inactivate a sub-TAO / Remove a TAO
-   </td>
-   <td>2
-   </td>
-   <td>Steward(s)
-   </td>
-   <td>Y
-   </td>
-  </tr>
-</table>
+Note: TAOs are not a recommended model for how to actually govern a society and their application should be limited in scope towards organizations, as is implied by the "O" in TAO.
 
 
-It's possible to have more granular design over decision-making processes, such as managing the token supply being in control by members, yet restricting the activation and deactivation of sub-TAOs to be controlled by a singular steward, and another permission being the responsibility of multiple stewards.
+### Nimble network topology
+The network topology of a TAO is nimble. A TAO can remain simple, where there is only a singular treasury, or it can become more fractalized with _Structural Transformation Proposals_. Such proposals are required to empower or disempower a **sub-TAO** or **sister-TAO** or to join or leave a **super-TAO**. These topological bodies are described in the next sections.
 
-Regardless of which Governance Level is enacted, TAO members will always be able to modify it in the future by creating a _Transformation Proposal_ (i.e. it's not a dictatorship), but the frequency at which transformations occur is a parameter that may impact the rate at which such transformations can occur.
+Members of a TAO can decide to empower **sub-TAOs**, which are guilds that are responsible for different focus areas / workstreams. There will be at least one smart contract per sub-TAO, enabling management of independent treasuries, yet the origination TAO has control over disbanding the sub-TAO. Sub-TAOs are tightly coupled to a "parent TAO".
 
-Some TAOs may be more static and will choose not to transform their Governance Level very often. For example, a TAO may decide to always operate with Level 2A governance yet allow Level 2C governance when the TAO is being litigated. The power of a TAO model is having the optionality to adapt to unpredictable conditions and also to embrace more scientific experimentation of organization design.
+Another formation is that a TAO can decide to empower a **sister-TAO** which would be similar to a sub-TAO with one main difference: there isn't a revokable treasury, yet what can be revoked is the general affiliation between the two sister TAOs. Usually a sister-TAO can be formed when its performing a function that can be beneficial to other distinct TAOs.
 
+An individual sub-TAO or sister-TAO has autonomy over how it is governed. For example, the sub-TAO can transform from a member-led direct democracy to an organization where leadership functions are granted to a steward or set of stewards. A TAO can also include a combination of sub-TAOs and sister-TAOs. 
 
-### Initialization Parameters
-
-Whenever a new TAO is configured there will be important parameters that are initialized. One is the _Frequency of Transformation_ which controls how often a TAO can become transformed. This is a very important parameter, as allowing too frequent transformations can lead towards destabilization.
-
-Another is the _Enabled Governance Levels_ which controls the valid _Governance Levels_ that the TAO can become transformed into. The _Governance Levels_ that can be enabled will be based on the _Enabled Organization Configurations_ and _Enabled Leadership Bodies_. Another related parameter is the _Initial Governance Level_ which defines the TAO's initial governance model.
-
-Of course, there will have to be parameters that establish how proposals can be passed, such as the quorum, approval percentage, and proposal duration. The TAO can configure different thresholds for _Standard Proposals_ vs. _Transformation Proposals_ since transforming governance levels is a much more serious event than simply funding a project or idea.
-
-Lastly, there is the _Antifragile Mode_ parameter. With _Antifragile Mode_ enabled, organizations can enact immediate, emergency transformations to steward-led governance. When this option is enabled, there be a continuous election proposal that is perpetually open.  TAO members can always anonymously vote on who the de facto stewards would be should the organization need to immediately transform. Nobody in the TAO knows who the de facto steward(s) are until the transformation is finalized. 
-
-De facto steward(s) will be in power for a limited amount of time, until official elections conclude. Stewards can be elected either based on a liquid democracy or a standard election schedule.
-
-TAO parameters can be updated after the TAO is deployed.
-
-### Transformation Proposal
-
-TAO or sub-TAO members can submit a transformation proposal whenever they feel it's important to transform their organization's governance. The proposal should include detailed _Justification, New Governance Level, Permission Modifications, Transformation Duration, Enactment Date, and Election Date _(if the transformation involves enacting Steward-led governance).  
-
-A sample _Justification_ would be something like: 
-
-> We are currently configured as a Level 2A organization, but our sub-TAO is exhibiting a tyranny of structurelessness. There are obvious people that are the main stewards of the sub-TAO but there is currently no good way for holding them accountable. Instead of pretending like we are running as a fully decentralized unit, let's transform into a Level 2B organization.
-
-The _Transformation Duration_ can be indefinite, or can be something shorter term such as 6 months, 1 year, etc. _Permission Modifications_ allows customizations to the default permission set that accompanies the selected _New Governance Level_. The _Enactment Date_ can be _Immediate_, after the vote is resolved or it can be a number of days after the vote is resolved.
-
-Note: If a TAO did not previously have a leadership body enabled, such as a **Singular Steward**, yet members would like to transform to empower a **Singular Steward** control over functions, then a proposal must be made first to modify the TAO's parameters before the _Transformation Proposal_ can be submitted.
+Similar to how easily TAOs can fractalize into smaller parts, they can also just as easily combine into larger parts. TAOs can form mergers, where two distinct and independent TAOs decide to unify their treasury and unify their membership class. TAOs can also form into **super-TAOs**, which is a "TAO of TAOs" topology, where two or more independent TAOs unify over a common mission or strategy, yet have independent treasuries. The primary governance activities in a super-TAO would be determining the budget allocation and responsibilities per member organization and adding or removing sister organizations.
 
 
-### Governance Rights
+### Adaptable and antifragile leadership paradigms
+TAOs are highly adaptive organizations, composed of an autonomous membership class that are able to transform their organization's leadership to become more hierarchical or more distributed as needed, easily flipping between modes by the creation of _Leadership Transformation Proposals_. At the most basic level, potential leadership bodies will include: **the membership class**, an electable set of **multiple stewards**, or an electable **singular steward**.
 
-Voting models closer to _one person, one vote_ that provide anonymity are favored over transparent models weighted based on capital contribution. Anonymous voting is enabled with zero-knowledge proofs.
+Stewards within a TAO practice [microsolidarity](https://www.microsolidarity.cc/). Empowering stewards to be responsible for a function of the organization are considered temporary, revokable roles. E.g. once steward(s) are empowered, their power has limits that are ultimately at the mercy of the primary membership class. When there are multiple stewards, they can either be elected based on a liquid model or there can be a more standard election with terms. Stewards should be compensated from the TAO treasury.
 
-TAOs are _permissioned_ organizations. Similar to the governance of cooperatives, new contributors start off with no voting powers, they are member-candidates. The _Membership Review Period_ defines the periodic basis where existing members vote in new governing members and also decide upon each member’s voting weights.
+TAOs will include an _Antifragile Mode_ parameter. With _Antifragile Mode_ enabled, organizations that are **governed by the membership class** can enact immediate, emergency transformations to steward-led governance. To support this, there is an election proposal that is perpetually open where TAO members can anonymously vote on **the de facto stewards** that would be empowered, should the organization need to immediately transform to have more hierarchical leadership. Nobody in the TAO knows who the de facto steward(s) are until the transformation is finalized. De facto steward(s) will be in power for a limited amount of time, which will be specified in the _Leadership Transformation Proposal_. 
 
-One idea is that TAOs will have _one person, variable weight_ voting based on contributor level. In this use case, sybil resistance is based on the limits of human contribution. Some sample voting weights can be:
 
-* 1x - Contributing &lt;5 hours a week
-* 3x - Contributing &lt;10 hours a week
-* 5x - Contributing 20 hours a week
+:::note NOTE
+These are just some initial thoughts on what a TAO ecosystem can look like. It will be important moving forward to go a bit deeper on all of the pillars. Join the [#🔄-taos](https://discord.gg/ZqYAbA6BVY) channel in the Black Sky Discord to continue the discussion, or propose changes by [editing this page](https://github.com/BlackSkyNetwork/nexus/edit/main/docs/zine/00000000/transformative-autonomous-organizations.mdx).
+:::
 
-Note: it’s possible for TAO membership to be automated based on a member-candidate earning reputation, instead of tying the process to a member vote, but it’s important to be able to disable the algorithm and use human judgment when it seems as if: 1) the algorithm is being gamed or 2) the algorithm has created a dystopian environment in some other way. (Will elaborate on this more in the future).
 
-## Next steps
-
-These are just some initial thoughts on what a TAO ecosystem can look like.  It will be important moving forward to go a bit deeper on all of the principles. Additionally, defining the standards for each _Governance Level_ will definitely require more thought and consideration - each will require a detailed specification. As TAOs evolve over time, it's also possible the number of levels will grow and expand.
-
-Thank you Peter Phillips for making critical contributions to the design of TAO _Governance Levels_.
-
-Join the [#🔄-taos](https://discord.gg/ZqYAbA6BVY) channel in the Black Sky Discord to continue the discussion, or propose changes by [editing this page](https://github.com/BlackSkyNetwork/nexus/edit/main/docs/zine/00000000/transformative-autonomous-organizations.mdx).
+_Thank you Peter Phillips for providing comments and feedback that helped me shape TAO governance._
 
 
 ## References
