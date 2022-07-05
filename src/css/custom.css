@@ -440,6 +440,12 @@ blockquote {
   text-align: center;
 }
 
+@media screen and (max-width: 996px) {
+  .poem {
+    font-size: 1.2rem;
+  }
+}
+
 .markdown code {
   background-color: rgb(32, 32, 33);
   color: var(--ifm-color-primary-lightest);
