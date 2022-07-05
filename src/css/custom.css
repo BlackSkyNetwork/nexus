@@ -85,6 +85,89 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Cigra-FREEDEMO';
+  src: url('/static/fonts/Cigra Free Demo.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Astonia';
+  src: url('/static/fonts/Astonia.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+@font-face {
+  font-family: 'cantiquenormal';
+  src: url('/static/fonts/Cantique-Normal.woff2') format('woff2'),
+       url('/static/fonts/Cantique-Normal.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roseritta';
+  src: url('/static/fonts/Roseritta.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'bluu_nexttitling';
+  src: url('/static/fonts/BluuNext-Titling.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'bluu';
+  src: url('/static/fonts/bluunext-bold.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Glitten';
+  src: url('/static/fonts/Glitten-Regular.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'GwenText-Trial-Light';
+  src: url('/static/fonts/GwenText-Trial-Light.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'GwenText-Trial-SemiBold';
+  src: url('/static/fonts/GwenText-Trial-SemiBold.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Matiott';
+  src: url('/static/fonts/MATIOTT\ ELEGANT\ FONT.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+
 
 /** MAIN **/
 
@@ -175,8 +258,8 @@
 }
 
 .markdown h1:first-child{
-  font-family: "Carlito", sans-serif;
-  font-size: 3.6rem;
+  font-family: "Italiana", sans-serif;
+  font-size: 3.4rem;
   letter-spacing: 3px;
   text-align: center;
   text-transform: uppercase;
@@ -184,13 +267,9 @@
 }
 
 .markdown h1:first-child::first-letter{
-  font-family: "Antikvarika";
+  font-family: "Italiana";
 }
 
-.spec-char {
-  font-family: "Antikvarika";
-  font-size: 3.6rem;
-}
 
 .img-up {
   margin-bottom: -7px;
@@ -215,7 +294,7 @@
 
 @media screen and (max-width: 996px) {
   .markdown h1:first-child{
-    font-size: 3rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -346,6 +425,12 @@ blockquote {
   text-align: center;
 }
 
+@media screen and (max-width: 996px) {
+.doc-subtitle {
+  font-size: 1rem;
+}
+}
+
 .poem {
   font-size: 1.8rem;
   font-weight: 500;
@@ -372,9 +457,9 @@ iframe {
   height: 524.8px;
 }
 
-@media screen and (max-width: 996px) {
+@media screen and (max-width: 933px) {
   .video-embed {
-    width: 420px;
+    width: 357px;
     height: 236.25px;
   }
 }
