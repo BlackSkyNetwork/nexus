@@ -14,7 +14,7 @@ This resource is in an early draft mode. Contributions to make it better are ver
 * Unstoppable Domains maintains a [Web3 glossary](https://unstoppabledomains.com/blog/the-web3-glossary), if you want to better understand what terms like *WAGMI*, *PFP*, or *Diamond Hands* mean.
 * The Defiant has some good [DeFi 101 resources](https://thedefiant.io/defi-101/).
 * The Satoshi Nakamoto Institute maintains a nice archive of [critical historic texts](https://nakamotoinstitute.org/literature/) related to bitcoin, crypto-anarchy, free software, etc.
-* Matter Labs maintains *[a curated list](https://github.com/matter-labs/awesome-zero-knowledge-proofs) of awesome things related to learning zero knowledge proofs*.
+* There is a great independently [curated list](https://github.com/ventali/awesome-zk) of awesome things related to learning zero knowledge proofs.
 * Gnosis Guild is launching [ZODIAC.WIKI](https://zodiac.wiki), an upcoming resource documenting a *pattern language* for DAOs, explaining common problems that DAOs face and proposed solutions.
 
 ## Sacred Texts
@@ -51,6 +51,7 @@ This resource is in an early draft mode. Contributions to make it better are ver
 * [Why is Gravity relevant in Token Engineering?](https://medium.com/token-engineering-commons/why-is-gravity-relevant-in-token-engineering-e28ae4a5b5a1) By Juan Carlos Bell Llinás
 
 ### Law
+* [DAO Legal Entity Matrix](https://daos.paradigm.xyz/) by Paradigm
 * [Legal Framework for Non-US Trusts in Decentralized Autonomous Organizations](https://dydx.foundation/blog/en/legal-framework-non-us-trusts-in-daos) By DYDX Foundation
 * [DAO Model Law](https://coala.global/daomodellaw/) By COALA
 * [Crypto Legal Risk Checklist](../../wiki/crypto-legal-risk-checklist) By Fatemeh Fannizadeh, Silke Noa

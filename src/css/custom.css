@@ -258,16 +258,16 @@
 }
 
 .markdown h1:first-child{
-  font-family: "Italiana", sans-serif;
+  font-family: "bluu", sans-serif;
   font-size: 3.4rem;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
   text-align: center;
   text-transform: uppercase;
   font-style: normal;
 }
 
 .markdown h1:first-child::first-letter{
-  font-family: "Italiana";
+  font-family: "bluu";
 }
 
 
@@ -374,7 +374,7 @@ p {
 }
 
 .hero .button {
-  font-family: lisbeth-display, sans-serif;
+  font-family: 'bluu', sans-serif;
   font-size: 140%;
   border-radius: 2px;
   background-color: var(--ifm-background-color);
@@ -421,6 +421,12 @@ blockquote {
   font-weight: 500;
   font-family: forma-djr-deck, sans-serif;
   letter-spacing: 1px;
+  display: block;
+  text-align: center;
+}
+
+.min-dystopia {
+  font-style: italic;
   display: block;
   text-align: center;
 }
