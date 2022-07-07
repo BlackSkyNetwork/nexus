@@ -1,1 +1,13 @@
-<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 933 42.78"><defs><style>.cls-1{fill:none;stroke:#a74782;stroke-miterlimit:10;stroke-width:2px;}.cls-2{fill:#a74782;fill-rule:evenodd;}</style></defs><title>dec_up</title><line class="cls-1" x1="933" y1="41.78" y2="41.78"/><polygon class="cls-2" points="439.32 42.6 466.52 15.41 493.37 42.25 494.53 41.09 466.52 13.19 438.27 41.55 439.32 42.6"/><polygon class="cls-2" points="466.49 42.73 480.61 28.84 933 28.84 933 25.92 479.44 25.92 466.49 38.64 453.76 25.92 0 25.92 0 28.84 452.6 28.84 466.49 42.73"/><polygon class="cls-2" points="426 42.72 466.5 2.22 506.89 42.6 508.06 41.55 466.5 0 424.95 41.55 426 42.72"/></svg>
+<svg width="933" height="43" viewBox="0 0 933 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_2732_30)">
+<path d="M933 41.7803H0" stroke="#FA36C3" stroke-width="2" stroke-miterlimit="10"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M439.32 42.6004L466.52 15.4104L493.37 42.2504L494.53 41.0904L466.52 13.1904L438.27 41.5504L439.32 42.6004Z" fill="#FA36C3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M466.49 42.7299L480.61 28.8399H933V25.9199H479.44L466.49 38.6399L453.76 25.9199H0V28.8399H452.6L466.49 42.7299Z" fill="#FA36C3"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M426 42.72L466.5 2.22L506.89 42.6L508.06 41.55L466.5 0L424.95 41.55L426 42.72Z" fill="#FA36C3"/>
+</g>
+<defs>
+<clipPath id="clip0_2732_30">
+<rect width="933" height="42.78" fill="white"/>
+</clipPath>
+</defs>
+</svg>
