@@ -44,7 +44,7 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      image: 'img/cover.gif',
+      image: 'img/nexus_header.png',
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
