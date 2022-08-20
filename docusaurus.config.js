@@ -45,6 +45,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/nexus_header.png',
+      metadata: [{name: 'twitter:card', content: 'summary_large_image'}],
       colorMode: {
         defaultMode: 'dark',
         disableSwitch: true,
