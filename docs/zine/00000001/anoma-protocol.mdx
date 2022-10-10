@@ -30,7 +30,7 @@ Anoma has broad goals for intents to be used for the bartering of goods and serv
 
 In Anoma, *validity predicates* contain the logic that communicates with the state machine to ultimately identify whether a state change is valid. The validity predicate check is stateless and can be parallelized for any number of accounts that are involved in a transaction.
 
-Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, but later versions will deploy [Typhon](https://specs.anoma.net/master/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round. A heterogeneous chain within the Anoma network is known as a fractal instance. [^4]
+Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, but later versions will deploy [Typhon](https://specs.anoma.net/main/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round. A heterogeneous chain within the Anoma network is known as a fractal instance. [^4]
 
 Anoma utilizes zk-SNARKs to provide transaction privacy, initially with the Multi-Asset Shielded Pool (MASP) that offers a singular anonymity set for both Ethereum and IBC-compatible assets [^5] within a single fractal instance. Namada is the name of Anoma's initial fractal instance, which utilizes Tendermint and will include the MASP. Future versions of Anoma will replace the MASP with [Taiga](https://github.com/anoma/taiga/blob/main/book/src/overview.md), which will eventually support a singular anonymity set across multiple fractal instances. [^6]
 
@@ -44,7 +44,7 @@ The two main problems Anoma is trying to address are that of scaling the number 
 
 * Heterogeneous Paxos and stateless validity predicate checks are each interesting designs in the landscape of scaling blockchain systems. We are curious to see whether Anoma bring this unique vision to life and whether they find success with it.
 * Vamp-IR, Anoma's language for creating universal representations of arithmetic circuits, can potentially be useful for other zk projects outside of Anoma.
-* Anoma's [v3](https://specs.anoma.net/master/releases/v3.html), with the full vision of [Taiga](https://github.com/anoma/taiga/blob/main/book/src/overview.md) implemented, is a more compelling offering compared to earlier versions of the protocol (v1, v2) that offer less privacy.
+* Anoma's [v3](https://specs.anoma.net/main/releases/v3.html), with the full vision of [Taiga](https://github.com/anoma/taiga/blob/main/book/src/overview.md) implemented, is a more compelling offering compared to earlier versions of the protocol (v1, v2) that offer less privacy.
 
 
 ### Production Stage: Testnet 
@@ -60,7 +60,7 @@ Feigenbaum was Anoma’s first public testnet, launched in November 2021 [^8], a
 ## Overview
 
 ### Consensus Protocol
-Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, though later versions will deploy [Typhon](https://specs.anoma.net/master/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round.
+Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, though later versions will deploy [Typhon](https://specs.anoma.net/main/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round.
 
 This will make possible the creation of multiple interoperable "fractal instances," which are sovereign chains that can have different functional utility and state machines, such as one being a bartering protocol, another supporting shielded assets, and another being a global settlement layer. Each of these fractal instances can have different security models as well, such as being proof of work, proof of authority, or proof of stake, etc.
 
@@ -136,7 +136,7 @@ Anoma’s documentation provides a few examples of how a user can customize thei
 
 In initial versions of Anoma, validity predicate functions are public meaning when a user is customizing their validity predicates, Anoma will leak data around balance preferences and transaction threshold amounts that require greater security. In future versions, once the full spec of Taiga is devised, developed, and released, it will be possible to have validate predicates with private functions that support multi-party transactions.
 
-The [v3](https://specs.anoma.net/master/releases/v3.html) of Anoma is quite necessary to fulfill on the mission of creating a “privacy-preserving protocol”, so hopefully there is no mainnet Anoma until v3 is released, so the user experience can be well tailored to properly satisfy their mission.
+The [v3](https://specs.anoma.net/main/releases/v3.html) of Anoma is quite necessary to fulfill on the mission of creating a “privacy-preserving protocol”, so hopefully there is no mainnet Anoma until v3 is released, so the user experience can be well tailored to properly satisfy their mission.
 
 #### Anoma Can Be Transparent and/or Private
 Compared to privacy layer 1 protocols like Aleo, Penumbra, and DarkFi, Anoma is not a fully shielded blockchain and supports both transparent transactions in addition to shielded transactions.
@@ -239,14 +239,14 @@ Anoma has a [research page](https://anoma.net/research) where the team shares cr
 [^16]: Namada.net&#8204;. “Namada FAQ.”  Accessed 2022. https://namada.net/faq.html. 
 [^17]: Samartino, Alex Flory. “Enabling Multi-Asset Privacy on Anoma.” Anoma (blog), 21 June 2021, https://anoma.net/blog/enabling-multi-asset-privacy-on-anoma/. 
 [^18]: Bowe, Sean. “Explaining Halo 2.” Electric Coin Company (blog), 1 Sept. 2020, https://electriccoin.co/blog/explaining-halo-2/. 
-[^7]: Specs.anoma.net&#8204;. “Anoma Specifications: J-Group.” Accessed 2022. https://specs.anoma.net/master/architecture/language/j-group.html. 
+[^7]: Specs.anoma.net&#8204;. “Anoma Specifications: J-Group.” Accessed 2022. https://specs.anoma.net/main/architecture/language/j-group.html. 
 [^19]: Juvix.org&#8204;. “The Juvix Book.” Accessed 2022. https://docs.juvix.org/index.html.
 [^20]: GitHub.com&#8204;. “Anoma/Juvix-Circuits.” Accessed 2022. https://github.com/anoma/juvix-circuits. 
 [^21]: GitHub.com&#8204;.  “Anoma/Vamp-Ir” Accessed 2022. https://github.com/anoma/vamp-ir. 
-[^22]: Specs.anoma.&#8204;net. “Anoma Specifications: Design Philosophy.” Accessed 2022. https://specs.anoma.net/master/architecture/language/j-group/vampir/ir_design.html. 
+[^22]: Specs.anoma.&#8204;net. “Anoma Specifications: Design Philosophy.” Accessed 2022. https://specs.anoma.net/main/architecture/language/j-group/vampir/ir_design.html. 
 [^23]: Youtube.com&#8204;. “An Introduction to Taiga — Yulia Khalniyazova — Privacy Evolution 22.” Video, 29 Aug. 2022, https://www.youtube.com/watch?v=BaZbmiR6F54.
 [^24]: GitHub.com&#8204;. “Taiga/Overview.” Accessed 2022. https://github.com/anoma/taiga/blob/main/book/src/overview.md.
-[^25]: Specs.anoma.net&#8204;. “Anoma Specifications: V2.” Accessed 2022. https://specs.anoma.net/master/releases/v2.html.
+[^25]: Specs.anoma.net&#8204;. “Anoma Specifications: V2.” Accessed 2022. https://specs.anoma.net/main/releases/v2.html.
 [^26]: Youtube.com&#8204; “Anoma Huddle Amsterdam - Anoma: Endgame.” Video, 11 May 2022, https://www.youtube.com/watch?v=XdkXswGWHHQ.
 [^30]: Wilhelm, Alex. “The Anoma Protocol Raises $26M for Its Work to Undefine Money” TechCrunch, 17 Nov. 2021, https://techcrunch.com/2021/11/17/the-anoma-protocol-raises-26m-for-its-work-to-undefine-money/. 
 [^6]: Discord. “Anoma Discord Channel.” Accessed 2022.  https://discord.com/channels/833618405537218590/996749519284875265/1012047414699503778. 
