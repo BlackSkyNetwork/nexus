@@ -18,27 +18,23 @@ import Header from '@site/docs/img/00000001/anoma.jpg';
 <div class="header"><img src={Header} /></div>
 <ImgDown className="img-down" />
 
-:::note Publication Stage: Draft
-This report is in a draft stage. The references are messed up and need to be updated. Please avoid sharing on social media at the moment.
-:::
-
 ## Project Summary
 
 Anoma is a new privacy-focused protocol that includes native features for counterparty discovery based on matchmaking *intents*, with support for multi-chain atomic settlements [^1]. 
 
-Anoma is being developed by Heliax AG (Heliax), who are the founding development team funded by the Anoma Foundation, the latter of whom raised a $6.8m seed round in January 2021 and a $26m follow-on round in November 2021, valuing Anoma at $260m. [^b]
+Anoma is being developed by Heliax AG (Heliax), who are the founding development team funded by the Anoma Foundation, the latter of whom raised a $6.8m seed round in January 2021 and a $26m follow-on round in November 2021, valuing Anoma at $260m. [^2]
 
 The narrative around the Anoma protocol is heavily constructed around this concept of *intents* as a core aspect of the protocol design. Intents are envisioned to enable "any digital representation of value to be used as a means of exchange, payment or trade". Essentially, intents are a way for a user of the protocol to broadcast their desire to acquire a good or service for a particular price or within a particular price range.
 
-Anoma has broad goals for intents to be used for the bartering of goods and services in local physical communities [^2], but there are currently no technical designs for how to realistically establish such barter economies.
+Anoma has broad goals for intents to be used for the bartering of goods and services in local physical communities [^3], but there are currently no technical designs for how to realistically establish such barter economies.
 
 In Anoma, *validity predicates* contain the logic that communicates with the state machine to ultimately identify whether a state change is valid. The validity predicate check is stateless and can be parallelized for any number of accounts that are involved in a transaction.
 
-Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, but later versions will deploy [Typhon](https://specs.anoma.net/master/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round. A heterogeneous chain within the Anoma network is known as a fractal instance. [^7]
+Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, but later versions will deploy [Typhon](https://specs.anoma.net/master/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round. A heterogeneous chain within the Anoma network is known as a fractal instance. [^4]
 
-Anoma utilizes zk-SNARKs to provide transaction privacy, initially with the Multi-Asset Shielded Pool (MASP) that offers a singular anonymity set for both Ethereum and IBC-compatible assets [^3] within a single fractal instance. Namada is the name of Anoma's initial fractal instance, which utilizes Tendermint and will include the MASP. Future versions of Anoma will replace the MASP with [Taiga](https://github.com/anoma/taiga/blob/main/book/src/overview.md), which will eventually support a singular anonymity set across multiple fractal instances. [^26]
+Anoma utilizes zk-SNARKs to provide transaction privacy, initially with the Multi-Asset Shielded Pool (MASP) that offers a singular anonymity set for both Ethereum and IBC-compatible assets [^5] within a single fractal instance. Namada is the name of Anoma's initial fractal instance, which utilizes Tendermint and will include the MASP. Future versions of Anoma will replace the MASP with [Taiga](https://github.com/anoma/taiga/blob/main/book/src/overview.md), which will eventually support a singular anonymity set across multiple fractal instances. [^6]
 
-Heliax is also developing various languages that will spawn private and verifiable interfaces, protocols, and applications within the Anoma network. These languages include Juvix, Alucard, and Vamp-IR. Together, this set of languages is known as the J-group. [^16]
+Heliax is also developing various languages that will spawn private and verifiable interfaces, protocols, and applications within the Anoma network. These languages include Juvix, Alucard, and Vamp-IR. Together, this set of languages is known as the J-group. [^7]
 
 The two main problems Anoma is trying to address are that of scaling the number of parties involved in financial transactions ("n-party bartering") and bringing privacy to these types of transactions.
 
@@ -52,14 +48,14 @@ The two main problems Anoma is trying to address are that of scaling the number 
 
 
 ### Production Stage: Testnet 
-Feigenbaum was Anoma’s first public testnet, launched in November 2021 [^4], and is currently down. The next testnet will operate on Namada [^5], Anoma’s first fractal instance operating Anoma v1. Currently, there is not a way for future users to join the testnet, but future users can submit an email to receive a newsletter of pertinent announcements [^6]. There are plans to take Namada to mainnet, but the timeline is unclear.
+Feigenbaum was Anoma’s first public testnet, launched in November 2021 [^8], and is currently down. The next testnet will operate on Namada [^9], Anoma’s first fractal instance operating Anoma v1. Currently, there is not a way for future users to join the testnet, but future users can submit an email to receive a newsletter of pertinent announcements [^10]. There are plans to take Namada to mainnet, but the timeline is unclear.
 
 
 [^1]: Anoma.net&#8204;. https://anoma.net/. Accessed 2022.
-[^b]: Bourgi, Sam. “Polychain Capital Leads Anoma Network’s $26M Raise.” Cointelegraph, 17 Nov. 2021, https://cointelegraph.com/news/polychain-capital-leads-anoma-network-s-26m-raise.
-[^2]: Goes, C, et al. “Anoma: Undefining Money Vision Paper.” 20 July 2021. https://anoma.net/vision-paper.pdf. 
-[^3]: Yin, Awa Sun. “An Overview of Anoma’s Architecture.” Anoma (blog). 3 June 2022, https://medium.com/anomanetwork/an-overview-of-anoma-s-architecture-26b72e8c9be5. 
-[^4]: Yin, Awa Sun. “Announcing Feigenbaum: Anoma’s First Public Testnet.” Medium, 1 Dec. 2021, https://medium.com/anomanetwork/announcing-feigenbaum-anomas-first-public-testnet-21eaa64d193b.
+[^2]: Bourgi, Sam. “Polychain Capital Leads Anoma Network’s $26M Raise.” Cointelegraph, 17 Nov. 2021, https://cointelegraph.com/news/polychain-capital-leads-anoma-network-s-26m-raise.
+[^3]: Goes, C, et al. “Anoma: Undefining Money Vision Paper.” 20 July 2021. https://anoma.net/vision-paper.pdf. 
+[^5]: Yin, Awa Sun. “An Overview of Anoma’s Architecture.” Anoma (blog). 3 June 2022, https://medium.com/anomanetwork/an-overview-of-anoma-s-architecture-26b72e8c9be5. 
+[^8]: Yin, Awa Sun. “Announcing Feigenbaum: Anoma’s First Public Testnet.” Medium, 1 Dec. 2021, https://medium.com/anomanetwork/announcing-feigenbaum-anomas-first-public-testnet-21eaa64d193b.
 
 ## Overview
 
@@ -68,10 +64,10 @@ Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consens
 
 This will make possible the creation of multiple interoperable "fractal instances," which are sovereign chains that can have different functional utility and state machines, such as one being a bartering protocol, another supporting shielded assets, and another being a global settlement layer. Each of these fractal instances can have different security models as well, such as being proof of work, proof of authority, or proof of stake, etc.
 
-This design is Anoma's solution for scaling, where diverse chains in the Anoma network will be able to easily intercommunicate with one another and settle transactions atomically, while utilizing independent state machines and security models. [^7]
+This design is Anoma's solution for scaling, where diverse chains in the Anoma network will be able to easily intercommunicate with one another and settle transactions atomically, while utilizing independent state machines and security models. [^4]
 
 ### Intent Gossip & Matchmaking Subprotocol
-Anoma includes an intent gossip and matchmaking subprotocol which helps match and settle intents across multiple parties. Anoma does not require a double coincidence of wants, instead, as more intents are broadcast by *gossip nodes*, *matchmaking nodes* are able to help settle complex n-party trades atomically [^8]. For example, if the following intents are individually broadcast:
+Anoma includes an intent gossip and matchmaking subprotocol which helps match and settle intents across multiple parties. Anoma does not require a double coincidence of wants, instead, as more intents are broadcast by *gossip nodes*, *matchmaking nodes* are able to help settle complex n-party trades atomically [^11]. For example, if the following intents are individually broadcast:
 
 * Alice wants to sell at most 8 $tokenA and buy at least 1 $tokenB
 * Bob wants to sell at most 1 $tokenB and buy at least 4 $tokenC
@@ -79,16 +75,16 @@ Anoma includes an intent gossip and matchmaking subprotocol which helps match an
 
 Then the first matchmaking node to match the three intents can facilitate settlement of the transaction and receive a reward. Alice did not have to find someone who wanted her 8 $tokenA for 1 $tokenB. Instead, the intent was matched with another intent, which ultimately got her the asset she was looking for, and at the exchange rate within her limits.
 
-Once an intent is shared with a gossip node, it is considered binding, although it is possible to include an *expiry time* within the intent for how long the intent is valid. However these standards are not requirements when it comes to the Anoma protocol: since the intent and gossip matchmaking system is considered a subprotocol of Anoma, it is possible for there to be even more specific subprotocols developed that are better catered toward different use cases.[^9]
+Once an intent is shared with a gossip node, it is considered binding, although it is possible to include an *expiry time* within the intent for how long the intent is valid. However these standards are not requirements when it comes to the Anoma protocol: since the intent and gossip matchmaking system is considered a subprotocol of Anoma, it is possible for there to be even more specific subprotocols developed that are better catered toward different use cases.[^12]
 
-While Anoma markets itself as "privacy-preserving protocol for decentralized counterparty discovery", in the v1 design of the intent gossip and matchmaking system, it is not possible for matchmaking nodes to do their job without knowing the contents of the intent (e.g. the currencies and exchange rates), although it is possible to have privacy for the address of the counterparties [^10].
+While Anoma markets itself as "privacy-preserving protocol for decentralized counterparty discovery", in the v1 design of the intent gossip and matchmaking system, it is not possible for matchmaking nodes to do their job without knowing the contents of the intent (e.g. the currencies and exchange rates), although it is possible to have privacy for the address of the counterparties [^13].
 
 ### Validity Predicates
 
-Similar to other distributed virtual machines such as the Ethereum Virtual Machine (EVM), Anoma’s ledger contains multiple independent accounts with different state subspaces and code. What differs is the execution, as Anoma does not operate in a step-by-step order where contracts call each other. Instead, transactions execute arbitrary code in a WASM virtual machine, meaning any transaction is able to read or write any state as desired. For this to be written to the ledger, all accounts involved in the transaction must accept the transaction. The way this is handled in Anoma is with *validity predicates*. Validity predicates are code that each account has, in addition to each token (i.e. ETH, ATOM, BTC), or specialized accounts like zero-knowledge circuits. Validity predicates for each account are public code (in initial versions of Anoma), and contain the logic that communicates with the Anoma state machine, to ultimately identify whether a state change for an account is valid. The validity predicate check is stateless and can be parallelized for any number of accounts that are involved in a transaction.[^10] [^11]
+Similar to other distributed virtual machines such as the Ethereum Virtual Machine (EVM), Anoma’s ledger contains multiple independent accounts with different state subspaces and code. What differs is the execution, as Anoma does not operate in a step-by-step order where contracts call each other. Instead, transactions execute arbitrary code in a WASM virtual machine, meaning any transaction is able to read or write any state as desired. For this to be written to the ledger, all accounts involved in the transaction must accept the transaction. The way this is handled in Anoma is with *validity predicates*. Validity predicates are code that each account has, in addition to each token (i.e. ETH, ATOM, BTC), or specialized accounts like zero-knowledge circuits. Validity predicates for each account are public code (in initial versions of Anoma), and contain the logic that communicates with the Anoma state machine, to ultimately identify whether a state change for an account is valid. The validity predicate check is stateless and can be parallelized for any number of accounts that are involved in a transaction.[^13] [^14]
 
 ### Threshold Decryption
-Anoma will use [Ferveo](https://eprint.iacr.org/2022/898), a threshold transaction decryption scheme for front-running protection, where the set of transactions for a newly proposed block are encrypted, meaning validators have no information about the contents of the transactions and hence do not have a game-theoritic advantage over other users. As described in the Anoma whitepaper [^10], the cryptography process proceeds as follows:
+Anoma will use [Ferveo](https://eprint.iacr.org/2022/898), a threshold transaction decryption scheme for front-running protection, where the set of transactions for a newly proposed block are encrypted, meaning validators have no information about the contents of the transactions and hence do not have a game-theoritic advantage over other users. As described in the Anoma whitepaper [^13], the cryptography process proceeds as follows:
 
 > 1. Periodically, validators run a byzantine-fault tolerant distributed key generation protocol, generating a shared public key and private key shards split among the validators. 
 > 2. Before submitting them to the peer-to-peer network, users encrypt transactions to this shared public key. 
@@ -98,7 +94,7 @@ Anoma will use [Ferveo](https://eprint.iacr.org/2022/898), a threshold transacti
 
 
 ### Namada
-Namada is Anoma's initial fractal instance which deploys v1 of the Anoma protocol using Tendermint BFT consensus, and is under development by the founding team Heliax. Core to Namada's architecture is the Multi-Asset Shielded Pool (MASP), which allows all assets bridged to Namada from Ethereum or [IBC](https://ibcprotocol.org/) chains to share a singular anonymity set [^12].
+Namada is Anoma's initial fractal instance which deploys v1 of the Anoma protocol using Tendermint BFT consensus, and is under development by the founding team Heliax. Core to Namada's architecture is the Multi-Asset Shielded Pool (MASP), which allows all assets bridged to Namada from Ethereum or [IBC](https://ibcprotocol.org/) chains to share a singular anonymity set [^15].
 
 
 #### Multi-Asset Shielded Pool (MASP)
@@ -110,25 +106,25 @@ Anoma supports both transparent and shielded transactions: it is not a fully shi
 
 ##### Trusted Setup
 
-To enable the MASP, Namada requires a [trusted setup ceremony](https://zkproof.org/2021/06/30/setup-ceremonies/), which is a multi-party computation (MPC) ceremony that lets many participants contribute randomness to a zk-SNARK's public parameters. Trusted setups consist of two phases. For the first phase, Namada will leverage the Powers of Tau from Zcash's Sapling MPC seeing as the first phase is circuit agnostic, so it's possible to bootstrap this process utilizing the data from an existing ceremony. For the second phase, a new ceremony is required to construct the parameters for the MASP zk-SNARK, since the phase is circuit-specific.[^13]   
+To enable the MASP, Namada requires a [trusted setup ceremony](https://zkproof.org/2021/06/30/setup-ceremonies/), which is a multi-party computation (MPC) ceremony that lets many participants contribute randomness to a zk-SNARK's public parameters. Trusted setups consist of two phases. For the first phase, Namada will leverage the Powers of Tau from Zcash's Sapling MPC seeing as the first phase is circuit agnostic, so it's possible to bootstrap this process utilizing the data from an existing ceremony. For the second phase, a new ceremony is required to construct the parameters for the MASP zk-SNARK, since the phase is circuit-specific.[^16]   
 
 
 
 #####  Cryptography Enhancements
 
-The current version of MASP relies on Groth16, which means that any changes to the pool design will require a new trusted setup. Heliax is researching upgrade paths and are considering using PlonKup (PLONK+plookup) or Halo 2 instead of the Groth16 based design[^14]. PlonKup is a universal circuit that still requires a trusted setup, but upgrades wouldn't require new trusted setups. Halo 2 doesn't require a trusted setup.[^15]
+The current version of MASP relies on Groth16, which means that any changes to the pool design will require a new trusted setup. Heliax is researching upgrade paths and are considering using PlonKup (PLONK+plookup) or Halo 2 instead of the Groth16 based design[^17]. PlonKup is a universal circuit that still requires a trusted setup, but upgrades wouldn't require new trusted setups. Halo 2 doesn't require a trusted setup.[^18]
 
 ### J-group
-Heliax is developing various languages that will help spawn private and verifiable interfaces, protocols, and applications within the Anoma network. These languages include Juvix, Alucard, and Vamp-IR. Together, this set of languages is known as the *J-group*.[^16]
+Heliax is developing various languages that will help spawn private and verifiable interfaces, protocols, and applications within the Anoma network. These languages include Juvix, Alucard, and Vamp-IR. Together, this set of languages is known as the *J-group*.[^7]
 
-* Juvix is a statically typed functional language that supports compiling validity predicates to the C language. Juvix can be considered Anoma's Solidity, except it has the goal of enabling *formally verifiable smart contracts*.[^17]
+* Juvix is a statically typed functional language that supports compiling validity predicates to the C language. Juvix can be considered Anoma's Solidity, except it has the goal of enabling *formally verifiable smart contracts*.[^19]
     * Various examples are available for review in the [Juvix documentation](https://docs.juvix.org/index.html), such as a [simple fungible token](https://docs.juvix.org/examples/html/ValidityPredicates/SimpleFungibleToken.html).
-* ALucard (Alu) is a domain-specific language (DSL) for writing zero-knowledge circuits that are compiled into Vamp-IR. Alu's syntax is derived from [Common Lisp](https://common-lisp.net/). [^18] 
-* Vamp-IR is a language for specifying arithmetic circuits and consists of a parser, compiler, and a prover runtime. Vamp-IR stands for *Vamp-IR Aliased Multivariate Polynomial Intermediate Representation*.[^19] The compiler can transform an arithmetic circuit into a form compatible with any proving system backend, such as R1CS, vanilla PLONK, PLONK with lookups and/or custom gates, PLONKish Halo 2, etc. Vamp-IR enables a circuit IR to capture the intention of the circuit alone, and remains agnostic to both the proving system features and the specific constraint system it targets.[^20]
+* ALucard (Alu) is a domain-specific language (DSL) for writing zero-knowledge circuits that are compiled into Vamp-IR. Alu's syntax is derived from [Common Lisp](https://common-lisp.net/). [^20] 
+* Vamp-IR is a language for specifying arithmetic circuits and consists of a parser, compiler, and a prover runtime. Vamp-IR stands for *Vamp-IR Aliased Multivariate Polynomial Intermediate Representation*.[^21] The compiler can transform an arithmetic circuit into a form compatible with any proving system backend, such as R1CS, vanilla PLONK, PLONK with lookups and/or custom gates, PLONKish Halo 2, etc. Vamp-IR enables a circuit IR to capture the intention of the circuit alone, and remains agnostic to both the proving system features and the specific constraint system it targets.[^22]
 
 
 ### Taiga
-Anoma predominantly describes and presents “transparent” Anoma in its whitepaper and blog documents. In transparent Anoma, validity predicate functions, as well as the asset type being traded via the gossip protocol, are public.[^21] “Private Anoma”, named Taiga, is currently in R&D by Heliax, but will bring privacy to both the validity predicate functions as well as the asset type being traded.[^22] An initial implementation of Taiga is expected to be included in v2 of Anoma [^23], but Heliax has not yet figured out the complex fully homomorphic encryption/multi-party computation cryptography involved for multi-party private state transitions which is slated for v3 of the protocol.[^24]
+Anoma predominantly describes and presents “transparent” Anoma in its whitepaper and blog documents. In transparent Anoma, validity predicate functions, as well as the asset type being traded via the gossip protocol, are public.[^23] “Private Anoma”, named Taiga, is currently in R&D by Heliax, but will bring privacy to both the validity predicate functions as well as the asset type being traded.[^24] An initial implementation of Taiga is expected to be included in v2 of Anoma [^25], but Heliax has not yet figured out the complex fully homomorphic encryption/multi-party computation cryptography involved for multi-party private state transitions which is slated for v3 of the protocol.[^26]
 
 
 ## Analysis
@@ -136,7 +132,7 @@ Anoma predominantly describes and presents “transparent” Anoma in its whitep
 ### User Privacy
 
 #### Public Validity Predicates Leak User Preferences
-Anoma’s documentation provides a few examples of how a user can customize their account’s validity predicate to add additional verifiers, such as not accepting any state changes that result in the user’s BTC balance going below 3 or requiring the signature of two private keys instead of one for transfers above a certain value [^11]. 
+Anoma’s documentation provides a few examples of how a user can customize their account’s validity predicate to add additional verifiers, such as not accepting any state changes that result in the user’s BTC balance going below 3 or requiring the signature of two private keys instead of one for transfers above a certain value [^14]. 
 
 In initial versions of Anoma, validity predicate functions are public meaning when a user is customizing their validity predicates, Anoma will leak data around balance preferences and transaction threshold amounts that require greater security. In future versions, once the full spec of Taiga is devised, developed, and released, it will be possible to have validate predicates with private functions that support multi-party transactions.
 
@@ -153,34 +149,34 @@ Given the current  fractal instance design, and Anoma supporting both transparen
 
 #### Anonymity Set
 
-Since Namada, Anoma's first fractal instance is not currently live, there is no size yet of Anoma's anonymity set. But one of the key properties of Namada's MASP is that all assets will be sharing a singular anonymity set, initially supporting fungible or non-fungible assets on both Ethereum or IBC-compatible chains. Assuming enough users adopt Namada, this can significantly strengthen privacy guarantees compared to single asset protocols such as Tornado Cash or Aztec Network's zk.money, and will be useful for assets with low transaction volumes or transactions with high values, assuming they remained within Namada.[^12] 
+Since Namada, Anoma's first fractal instance is not currently live, there is no size yet of Anoma's anonymity set. But one of the key properties of Namada's MASP is that all assets will be sharing a singular anonymity set, initially supporting fungible or non-fungible assets on both Ethereum or IBC-compatible chains. Assuming enough users adopt Namada, this can significantly strengthen privacy guarantees compared to single asset protocols such as Tornado Cash or Aztec Network's zk.money, and will be useful for assets with low transaction volumes or transactions with high values, assuming they remained within Namada.[^15] 
 
-Once Anoma develops Taiga, as well as a solution for private bridging ([see their work-in-progress spec](https://hackmd.io/cob1x80xSuecMtwmbCPvVA)), then a singular anonymity set can be shared across multiple fractal instances [^26], which will be a compelling offering if it works. Penumbra founder Henry de Valence and Anoma co-founder Christopher Goes were having a Twitter debate on September 17, 2022 about this topic of private bridging, and de Valence believes it is a bad design decision [^z]:
+Once Anoma develops Taiga, as well as a solution for private bridging ([see their work-in-progress spec](https://hackmd.io/cob1x80xSuecMtwmbCPvVA)), then a singular anonymity set can be shared across multiple fractal instances [^6], which will be a compelling offering if it works. Penumbra founder Henry de Valence and Anoma co-founder Christopher Goes were having a Twitter debate on September 17, 2022 about this topic of private bridging, and de Valence believes it is a bad design decision [^27]:
 
 > This is bad because private chains have meaningfully greater risks (e.g., secret inflation), and it’s important not to allow economic contagion between different shielded pools. Which is possible when the transfers are public, but isn’t when they’re private.
 
 
 Although from a longer-term perspective, private bridging must be where the future of cryptocurrency is headed if one assumes there will be more private cryptocurrencies and people will always have the desire to transact between different types of currencies.
 
-[^z]: Twitter.com&#8204;, “@hdevalence.” 17 Sept. 2022, https://twitter.com/hdevalence/status/1571206859888943104. 
+[^27]: Twitter.com&#8204;, “@hdevalence.” 17 Sept. 2022, https://twitter.com/hdevalence/status/1571206859888943104. 
 
 ### Networking Privacy
 
-There are no mentions in Anoma's documentation for how the protocol aims to address privacy of networking data (e.g. IP address and packet sizes) for users or validators of the network. When the team was questioned in their Discord about this topic, co-founder Christopher Goes mentioned that they plan to eventually integrate a mix network such as Nym into the Anoma stack, but this was not an immediate priority.[^26]
+There are no mentions in Anoma's documentation for how the protocol aims to address privacy of networking data (e.g. IP address and packet sizes) for users or validators of the network. When the team was questioned in their Discord about this topic, co-founder Christopher Goes mentioned that they plan to eventually integrate a mix network such as Nym into the Anoma stack, but this was not an immediate priority.[^6]
 
-Nowadays, experienced privacy advocates understand that this is a crucial design consideration that is important to be addressed to offer stakeholders the best "state of the art" privacy. Given that Anoma co-founder Awa Sun Yin's prior job was working "at a company that developed tools to deanonymize user data on blockchains and sold them for profit" [^12], it is unfortunate that this dimension is not addressed in the current protocol design. Networking privacy is quite often an afterthought among many privacy-focused layer 1 projects, yet this is where adversarial parties can gather ephemeral networking data to partially de-anonymize validators, users, and transactions.
+Nowadays, experienced privacy advocates understand that this is a crucial design consideration that is important to be addressed to offer stakeholders the best "state of the art" privacy. Given that Anoma co-founder Awa Sun Yin's prior job was working "at a company that developed tools to deanonymize user data on blockchains and sold them for profit" [^15], it is unfortunate that this dimension is not addressed in the current protocol design. Networking privacy is quite often an afterthought among many privacy-focused layer 1 projects, yet this is where adversarial parties can gather ephemeral networking data to partially de-anonymize validators, users, and transactions.
 
 ### Censorship Resistance
 
-The Ferveo threshold decryption mechanism is great for censorship-resistance, ensuring that validators behave in a credibly neutral way, which has become a more prominent design consideration in consensus protocols, after the August 8, 2022 US Treasury sanctions against Tornado Cash [^27].
+The Ferveo threshold decryption mechanism is great for censorship-resistance, ensuring that validators behave in a credibly neutral way, which has become a more prominent design consideration in consensus protocols, after the August 8, 2022 US Treasury sanctions against Tornado Cash [^28].
 
-What is concerning when it comes to censorship resistance is this vision around fractal scaling proposed in the whitepaper [^10]:
+What is concerning when it comes to censorship resistance is this vision around fractal scaling proposed in the whitepaper [^13]:
 
 > The frequency of commerce is inversely correlated with the distance (of any form) between the counterparties: most buyers in Shanghai are buying from a seller in Shanghai, and most buyers in Berlin are buying from a seller in Berlin. The topology of a digital barter network should reflect this, for both reasons of latency and local sovereignty: transactions in Berlin should be settled on a Berlin-controlled ledger, transactions in Shanghai should be settled on a Shanghai-controlled ledger – and the (far more infrequent) transactions between Berlin and Shanghai should be settled when necessary on a global ledger.
 
 With this scaling vision, local ledgers will potentially be less censorship resistant than global ledgers, since validators of local city-based ledgers will have to be more conscious of complying with local money transmitter laws, otherwise they can be fined or may go to jail. For example, let's say a Tehran fractal instance was created. Validators who are running a Los Angeles fractal instance will have to block incoming transactions from the Tehran instance, otherwise they will be breaking economic sanctions that exist between the USA and Iran.
 
-While it seems possible in the future for Anoma to include private bridges wherein the “source fractal instance” cannot be identified [^28], that does not mean it will be legal for a Los Angeles fractal instance to use bridging technology that blinds them from the transaction origination source, especially once Iranian, Syrian, and North Korean fractal instances are created.  
+While it seems possible in the future for Anoma to include private bridges wherein the “source fractal instance” cannot be identified [^29], that does not mean it will be legal for a Los Angeles fractal instance to use bridging technology that blinds them from the transaction origination source, especially once Iranian, Syrian, and North Korean fractal instances are created.  
 
 It’s also possible a jurisdiction may ban fully private Anoma altogether and require fractal city-based instances to comply with local banking laws. If the intention is to build a system that can’t be regulated by local authorities, then stakeholders securing the ledger of a city-based instance are going to need a lot more privacy and will have to figure out how to earn trust in their ledger without publicly revealing their identity, while additionally doing a good job of masking their location in the city.
 
@@ -193,7 +189,7 @@ Anoma's whitepaper was written before the Tornado Cash event, so hopefully the e
 
 ### Community Incentives 
 
-Namada is offering incentives for participating in their trusted setup ceremony [^13]. Regardless that the vision behind the Anoma protocol is one that champions privacy, KYC will be required to earn rewards in this incentive program. This is unfortunate, although these sort of over-compliance measures are expected for early stage protocols managed by foundations or corporations that have yet to decentralize operations, and hence have to follow jurisdictional laws, such as those of Switzerland, in the case of Anoma [^25].
+Namada is offering incentives for participating in their trusted setup ceremony [^16]. Regardless that the vision behind the Anoma protocol is one that champions privacy, KYC will be required to earn rewards in this incentive program. This is unfortunate, although these sort of over-compliance measures are expected for early stage protocols managed by foundations or corporations that have yet to decentralize operations, and hence have to follow jurisdictional laws, such as those of Switzerland, in the case of Anoma [^30].
 
 It’s instead possible to design incentive programs that maintain the full privacy of the community, such as allowing incentive programs and tokenomics of the protocol to be managed and distributed by a community DAO or guild, although this alternate method is not necessarily aligned with the current normative venture capital fundraising model in which the initial tokenomics are controlled by the founding stakeholders.
 
@@ -201,7 +197,7 @@ It’s instead possible to design incentive programs that maintain the full priv
 ### Strategy & Narrative
 Anoma suffers a narrative problem. First, it is difficult to imagine or understand how barter economies where farmers are exchanging goods can really be brought to life with Anoma or if a blockchain protocol is really needed for this use case, since tracking your harvest with a validity predicate doesn't seem practical. 
 
-In addition to these problematic bartering for physical goods examples, Anoma also quite often talks about the use case of a person trying to buy a festival ticket, a hotel, and a train ticket at the same time [^8], which is  uninspiring and doesn't seem like a super important problem to solve.
+In addition to these problematic bartering for physical goods examples, Anoma also quite often talks about the use case of a person trying to buy a festival ticket, a hotel, and a train ticket at the same time [^11], which is  uninspiring and doesn't seem like a super important problem to solve.
 
 Anoma would be easier to understand if they focused on multi-asset exchanges, and used more relatable examples, as their existing narrative and usage examples generally weaken the value proposition of the protocol. 
 
@@ -232,28 +228,28 @@ Anoma has a [research page](https://anoma.net/research) where the team shares cr
 
 
 
-[^5]: Twitter.com&#8204; “@namadanetwork.” 8 June 2022, https://twitter.com/namadanetwork/status/1534514340006662144?s=20&t=Vq4ay7zlAKOgi-HxST7WaQ.
-[^6]: Namada Mailing List. Accessed 2022.. https://dev.us7.list-manage.com/subscribe?u=69adafe0399f0f2a434d8924b&id=263f552276.
-[^7]: Sheff, Isaac. “Heterogeneous Paxos and Multi-Chain Atomic Commits.” Anoma (blog), 13 Sept. 2021, https://anoma.net/blog/heterogeneous-paxos-and-multi-chain-atomic-commits/
-[^8]: Wong, Gabriella. “Enabling N-Party Transactions with Anoma’s State Machine.” Anoma (blog), 1 Sept. 2021, https://anoma.net/blog/enabling-n-party-transactions-with-anomas-state-machine/.
-[^9]: van Daalen, Annabel. “Enabling Counterparty Discovery with Anoma’s Intent Gossip and Matchmaking System.” Anoma (blog), 29 May 2021, https://anoma.net/blog/intent-gossip-and-matchmaking-system/.
-[^10]: Goes, Christopher, et al. “Anoma: Undefining Money Whitepaper.” 26 Apr. 2021, https://anoma.net/whitepaper.pdf.
-[^11]: Samartino, Alex Flory. “Validity Predicates.” Anoma (blog), 17 May 2021, https://anoma.net/blog/validity-predicates/.
-[^12]: Yin, Awa Sun “Introducing Namada: Shielded Transfers with Any Assets.” Medium, 13 June 2022, https://medium.com/anomanetwork/introducing-namada-shielded-transfers-with-any-assets-dce2e579384c.
-[^13]: Namada.net&#8204;. “Namada FAQ.”  Accessed 2022. https://namada.net/faq.html. 
-[^14]: Samartino, Alex Flory. “Enabling Multi-Asset Privacy on Anoma.” Anoma (blog), 21 June 2021, https://anoma.net/blog/enabling-multi-asset-privacy-on-anoma/. 
-[^15]: Bowe, Sean. “Explaining Halo 2.” Electric Coin Company (blog), 1 Sept. 2020, https://electriccoin.co/blog/explaining-halo-2/. 
-[^16]: Specs.anoma.net&#8204;. “Anoma Specifications: J-Group.” Accessed 2022. https://specs.anoma.net/master/architecture/language/j-group.html. 
-[^17]: Juvix.org&#8204;. “The Juvix Book.” Accessed 2022. https://docs.juvix.org/index.html.
-[^18]: GitHub.com&#8204;. “Anoma/Juvix-Circuits.” Accessed 2022. https://github.com/anoma/juvix-circuits. 
-[^19]: GitHub.com&#8204;.  “Anoma/Vamp-Ir” Accessed 2022. https://github.com/anoma/vamp-ir. 
-[^20]: Specs.anoma.&#8204;net. “Anoma Specifications: Design Philosophy.” Accessed 2022. https://specs.anoma.net/master/architecture/language/j-group/vampir/ir_design.html. 
-[^21]: Youtube.com&#8204;. “An Introduction to Taiga — Yulia Khalniyazova — Privacy Evolution 22.” Video, 29 Aug. 2022, https://www.youtube.com/watch?v=BaZbmiR6F54.
-[^22]: GitHub.com&#8204;. “Taiga/Overview.” Accessed 2022. https://github.com/anoma/taiga/blob/main/book/src/overview.md.
-[^23]: Specs.anoma.net&#8204;. “Anoma Specifications: V2.” Accessed 2022. https://specs.anoma.net/master/releases/v2.html.
-[^24]: Youtube.com&#8204; “Anoma Huddle Amsterdam - Anoma: Endgame.” Video, 11 May 2022, https://www.youtube.com/watch?v=XdkXswGWHHQ.
-[^25]: Wilhelm, Alex. “The Anoma Protocol Raises $26M for Its Work to Undefine Money” TechCrunch, 17 Nov. 2021, https://techcrunch.com/2021/11/17/the-anoma-protocol-raises-26m-for-its-work-to-undefine-money/. 
-[^26]: Discord. “Anoma Discord Channel.” Accessed 2022.  https://discord.com/channels/833618405537218590/996749519284875265/1012047414699503778. 
-[^27]: U.S. Department of the Treasury. “U.S. Treasury Sanctions Notorious Virtual Currency Mixer Tornado Cash.” 8 Aug. 2022, https://home.treasury.gov/news/press-releases/jy0916.
-[^28]: Discord. “Discord Channel” Accessed 2022.
+[^9]: Twitter.com&#8204; “@namadanetwork.” 8 June 2022, https://twitter.com/namadanetwork/status/1534514340006662144?s=20&t=Vq4ay7zlAKOgi-HxST7WaQ.
+[^10]: Namada Mailing List. Accessed 2022.. https://dev.us7.list-manage.com/subscribe?u=69adafe0399f0f2a434d8924b&id=263f552276.
+[^4]: Sheff, Isaac. “Heterogeneous Paxos and Multi-Chain Atomic Commits.” Anoma (blog), 13 Sept. 2021, https://anoma.net/blog/heterogeneous-paxos-and-multi-chain-atomic-commits/
+[^11]: Wong, Gabriella. “Enabling N-Party Transactions with Anoma’s State Machine.” Anoma (blog), 1 Sept. 2021, https://anoma.net/blog/enabling-n-party-transactions-with-anomas-state-machine/.
+[^12]: van Daalen, Annabel. “Enabling Counterparty Discovery with Anoma’s Intent Gossip and Matchmaking System.” Anoma (blog), 29 May 2021, https://anoma.net/blog/intent-gossip-and-matchmaking-system/.
+[^13]: Goes, Christopher, et al. “Anoma: Undefining Money Whitepaper.” 26 Apr. 2021, https://anoma.net/whitepaper.pdf.
+[^14]: Samartino, Alex Flory. “Validity Predicates.” Anoma (blog), 17 May 2021, https://anoma.net/blog/validity-predicates/.
+[^15]: Yin, Awa Sun “Introducing Namada: Shielded Transfers with Any Assets.” Medium, 13 June 2022, https://medium.com/anomanetwork/introducing-namada-shielded-transfers-with-any-assets-dce2e579384c.
+[^16]: Namada.net&#8204;. “Namada FAQ.”  Accessed 2022. https://namada.net/faq.html. 
+[^17]: Samartino, Alex Flory. “Enabling Multi-Asset Privacy on Anoma.” Anoma (blog), 21 June 2021, https://anoma.net/blog/enabling-multi-asset-privacy-on-anoma/. 
+[^18]: Bowe, Sean. “Explaining Halo 2.” Electric Coin Company (blog), 1 Sept. 2020, https://electriccoin.co/blog/explaining-halo-2/. 
+[^7]: Specs.anoma.net&#8204;. “Anoma Specifications: J-Group.” Accessed 2022. https://specs.anoma.net/master/architecture/language/j-group.html. 
+[^19]: Juvix.org&#8204;. “The Juvix Book.” Accessed 2022. https://docs.juvix.org/index.html.
+[^20]: GitHub.com&#8204;. “Anoma/Juvix-Circuits.” Accessed 2022. https://github.com/anoma/juvix-circuits. 
+[^21]: GitHub.com&#8204;.  “Anoma/Vamp-Ir” Accessed 2022. https://github.com/anoma/vamp-ir. 
+[^22]: Specs.anoma.&#8204;net. “Anoma Specifications: Design Philosophy.” Accessed 2022. https://specs.anoma.net/master/architecture/language/j-group/vampir/ir_design.html. 
+[^23]: Youtube.com&#8204;. “An Introduction to Taiga — Yulia Khalniyazova — Privacy Evolution 22.” Video, 29 Aug. 2022, https://www.youtube.com/watch?v=BaZbmiR6F54.
+[^24]: GitHub.com&#8204;. “Taiga/Overview.” Accessed 2022. https://github.com/anoma/taiga/blob/main/book/src/overview.md.
+[^25]: Specs.anoma.net&#8204;. “Anoma Specifications: V2.” Accessed 2022. https://specs.anoma.net/master/releases/v2.html.
+[^26]: Youtube.com&#8204; “Anoma Huddle Amsterdam - Anoma: Endgame.” Video, 11 May 2022, https://www.youtube.com/watch?v=XdkXswGWHHQ.
+[^30]: Wilhelm, Alex. “The Anoma Protocol Raises $26M for Its Work to Undefine Money” TechCrunch, 17 Nov. 2021, https://techcrunch.com/2021/11/17/the-anoma-protocol-raises-26m-for-its-work-to-undefine-money/. 
+[^6]: Discord. “Anoma Discord Channel.” Accessed 2022.  https://discord.com/channels/833618405537218590/996749519284875265/1012047414699503778. 
+[^28]: U.S. Department of the Treasury. “U.S. Treasury Sanctions Notorious Virtual Currency Mixer Tornado Cash.” 8 Aug. 2022, https://home.treasury.gov/news/press-releases/jy0916.
+[^29]: Discord. “Discord Channel” Accessed 2022.
 https://discord.com/channels/833618405537218590/996749519284875265/1018917858136293447. 
