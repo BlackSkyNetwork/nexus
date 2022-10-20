@@ -7,27 +7,20 @@ import AnonymizeETHIntro from './_how-to-anonymize-eth-intro.mdx';
 # How to Anonymize Ethereum
 <AnonymizeETHIntro />
 
-### Step 0:  Create a fresh Ethereum account
-First you will need to start off by creating a fresh Ethereum address. For clarity, we will call the wallet where your public non-anonymous ETH originates from `Wallet1`. 
-
-To anonymize ETH, you must create a second fresh Ethereum account that is tied to a new seed. One way to do this, is to simply download [Metamask](https://metamask.io) on a different browser and create a brand new seed. It is important to use an entirely different seed to `Wallet1` to minimize the risk of linking the accounts.
-
-If you want to be highly secure, download Metamask on [Tor Browser](https://www.torproject.org/download/) (do not use a VPN when you are interacting with Tor as it will reduce your overall anonymity). If you don't use Tor, use a browser like Brave or Firefox alongside a VPN.
-
-Once you have downloaded Metamask on this new browser, create an account and backup your seed. Copy and paste your account's public key onto a text file. We'll use this later on. We will now refer to this account as `Wallet2`.
-
-## Anonymizing ETH using zk.money
 :::warning  Warning
 This zk.money guide was written using the old version of zk.money. We believe it may work similarly, but we apologize if there are some mistakes. Feel free to update the guide and help maintain this resource.
 :::
 
-The steps in this guide will take a few minutes to complete, but it will take about 6 hours until you can transact with your private, "shielded" ETH. 
+### Step 1:  Create a fresh Ethereum account
+First you will need to start off by creating a fresh Ethereum address. For clarity, we will call the wallet where your public non-anonymous ETH originates from `Wallet1`. 
 
-Once you have created your fresh Ethereum wallet `Wallet2` [described in Step 0](#step-0--create-a-fresh-ethereum-account), you can proceed with the rest of this guide.
+To anonymize ETH, you must create a second fresh Ethereum account that is tied to a new seed. One way to do this, is to simply download [Metamask](https://metamask.io) on a different browser and create a brand new seed. It is important to use an entirely different seed to `Wallet1` to minimize the risk of linking the accounts.
 
-_Note: Tor is not compatible with zk.money, so it's recommended to use a VPN instead._
+If you want to be highly secure, install Metamask on a browser like Brave or Firefox and use it alongside a VPN. (Tor is not compatible with zk.money)
 
-### Step 1: Connect to zk.money and pick username
+Once you have downloaded Metamask on this new browser, create an account and backup your seed. Copy and paste your account's public key onto a text file. We'll use this later on. We will now refer to this account as `Wallet2`.
+
+### Step 2: Connect to zk.money and pick username
 On the browser associated with `Wallet1`, navigate to the [zk.money](https://old.zk.money/) website. Connect `Wallet1` to zk.money. Pick a username to set as your alias.
 
 ![Pick username](../img/zk1.png)
@@ -40,7 +33,7 @@ Deposit at least 0.01 ETH for the username registration to be complete. You'll b
 
 ![Deposit ETH](../img/zk3.png)
 
-### Step 2: Shield your Ethereum
+### Step 3: Shield your Ethereum
 Now convert your ETH to zkETH by shielding your coins. Shield your preferred asset by clicking the “Shield” button on your dashboard. You can reduce the time the shielding will take by paying a higher transaction fee here. 
 
 Keep waiting until the `SHIELD` and `CREATE ACCOUNT` transactions are settled. Only then is your username successfully registered. This may take a few hours. 
@@ -53,7 +46,7 @@ You’ll be able to follow your transaction status in the dashboard. Please note
 
 Once you have a sendable balance of zkETH you will be in privacy mode. The entire process may take several hours, so don’t stress if the balance does not show up immediately.
 
-### Step 3: Send anonymized ETH to fresh wallet
+### Step 4: Send anonymized ETH to fresh wallet
 Now that the ETH has been anonymized, send it to `Wallet2`. Simply paste the `Wallet2` address into the *Recipient* section.
 
 ![Send ETH](../img/zk6.png)
