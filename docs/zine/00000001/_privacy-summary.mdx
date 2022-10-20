@@ -1,0 +1,277 @@
+# Progammable Privacy: Research Update
+
+In May 2022, Black Sky Nexus was awarded a grant from MolochDAO to create a report for the **Ecosystem Recommendations for Greater Privacy in Ethereum**. Part of this undertaking includes a **Survey of zero-knowledge cryptocurrency protocols, apps, and tools**. Our ultimate goal was to build up a knowledge base and understanding, that would help answer this question for the Ethereum community:
+
+> Should there be crucial protocol level changes that are adopted sooner rather than later? Or should the greater emphasis be in equipping Ethereum developers with more tools, SDKs, and patterns to develop private applications?
+
+## Research Method
+
+The first part of this study included analyzing projects that are at the cutting edge of developing private transaction protocols on Ethereum, Ethereum L2s, in addition to new L1s that promise both privacy and progammability. Our research approach for the first segment included a combination of reading project documentation, whitepapers, searching through project GitHub issues and Discord messages, in addition to asking projects questions in their Discord for increased clarity.
+
+Based on this analysis, the summary of which can be reviewed in the next section, and the details of which can be reviewed in the appendix, we have come up with three potential paths forward for Ethereum, which will be doing a survey on to conclude the second part of our study. 
+
+## Part 1: Research Highlights
+
+### Trends
+- Many protocols started off utilizing Groth16 snarks and are now moving toward PLONK-based snarks (Mina, Anoma). 
+- aleo, espresso, mina all exist in the world of decentralized private computation (DPC).:
+  - aleo started the trend with zexe. 
+  - espresso trying to innovate on zexe with veri zexe: https://www.espressosys.com/blog/veri-zexe-decentralized-private-computation-with-universal-setup i
+- in the world of mina, dpc is related to their zkapps https://minaprotocol.com/blog/zkapps-design-decisions-advantages-future-vision
+
+
+## Part 2: The Survey
+
+We are now releasing a survey to properly gauge the community sentiment on the path that the Ethereum ecosystem should adopt.
+
+
+### Option A: Shielded Applications and L2s
+This option involves sticking with the status quo, yet with a few enhancements such as threshold encryption or proposer builder separation for increased censorship resistance as the base layer. With Option A, base layer transaction privacy will never be added to Ethereum. Instead, if a developer wants to create a more privacy enhanced application, they will either add zk primitives directly in their app when building on mainnet Ethereum or will delploy their application on a shielded L2 such as Aztec Network.
+
+- https://ethresear.ch/t/removing-trusted-relays-in-mev-boost-using-threshold-encryption/13449
+- https://ethresear.ch/t/shutterized-beacon-chain/12249
+
+This option is most aligned with Vitalk Buterin's *[A rollup-centric ethereum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)*, but is more prone censorship.
+
+### Option B: Trustless Bridges to Privacy L1s
+This option involves protocol level changes so Ethereum can have more trustless and censorship resistant bridges or relays to privacy L1s that are currently under development. For example, Ethereum can consider adding IBC which may then make it easier for Ethereum users to have access to Penumbra's private payment system or private DEX. If Ethereum adds IBC, then it may become a new standard that would also reduce the number of bridge hacks, as new privacy L1 protocols that want to connect to Ethereum can also add IBC instead of developing a custom bridge. 
+
+### Option C: Ethereum Base Layer Privacy
+Adding base layer privacy to Ethereum would best be approached as an iterative process, due to the technical complexity of the effort. To approach it iteratively, multiple execution shards would need to be supported, such as the "Compromise Proposal" that Vitalk Buterin mentions in his forum topic *[A rollup-centric ethereum roadmap](https://ethereum-magicians.org/t/a-rollup-centric-ethereum-roadmap/4698)*. Alternatively, some equivalent development strategy would be needed to allow experimental private ledgers to co-exist with the legacy transparent ledger. Ideally the private ledger should be quantum resistant so the protocol does not have to undertake another complex upgrade process and can begin to ossify.
+
+### A Potential Roadmap
+A potential roadmap for adding base layer privacy is presented below. It's estimated that the process from Phase 1 to Phase 3 will take at least 2-3 years. This time estimate is based on how long it has been taking other teams to develop new shielded blockchain protocols. While the Ethereum community can leverage a lot of the research and outputs from the community of programmable privacy developers, since Ethereum is a decentralized protocol that coordinates with a large community of developers, it will be much slower to deliver base layer privacy than a solution that is being developed by a singular company. So the speed attained by utilizing the research of others is cancelled out due to the rough consensus development approach. 
+
+#### Phase 1:
+* The Ethereum blockchain consists of least two shards, a transparent shard and a private shard that is quantum resistant. They have different key structures yet can communicate easily with one another.
+* New assets cannot be created on private shards (yet).
+* When you transfer an asset from a public shard to a private shard (and vice versa), it is like you are burning the asset on one shard and creating a shielded (or transparent) version of the asset on the other shard.
+* The private shard initially has fixed functionality: you can only send individual private transactions or trade your assets using a protocol-native DEX, inspired by Penumbra's Zswap.
+* For functionality beyond these basic primitives, if one wants to develop more advanced private apps, developers can use specialized L2s or side chains, such as Aztec or an equivalent network.
+
+#### Phase 2:
+* A toolkit is released which allows developers to create fully private applications on the private shard. Teams start moving away from building private applications on L2s.
+* This paradigm is still experimental, but grants are awarded to initial trailblazing teams to create private applications on base layer Ethereum.
+
+
+#### Phase 3:
+* Once the private application toolkit and paradigm has proven to be a success, where both bug free and high performing apps can be developed with ease, many more fully private applications are developed.
+* Transparent shards and applications still exist, but many DeFi protocols now have both transparent and private versions of their protocols and there exist multiple private shareds.
+
+ 
+What could happen for Ethereum after Phase 3 is very questionable. Either Ethereum's close-to-final state remains something like Phase 3, or a cypherpunk political faction forms that champions for a fully private Ethereum, with configurable transparency. It seems very unlikely that Ethereum will ever go fully dark, instead what seems more plausible is that a "Dark Fork" may emerge at this point, where there will exist two version of Ethereum: a) a regulated and partially private Ethereum and b) an unregulated and fully dark and private Ethereum ("Dark Ethereum").
+
+
+#### Dark Ethereum:
+* The default for Dark Ethereum is private shards with a unified key structure, with privacy by default. Assets and transactions have configurable asset transparency, inspired by Espresso.
+* During the "Dark Fork", transparent shards are phased out of use. This would be a similar process as the PoW to PoS transition of the "Merge", except for Ethereum's key structure and transaction model. One caveat is that not all transparent applications are ported to Dark Ethereum after the "Dark Fork" since there is no easy way to make the transition without rewriting code.
+* Some privacy conscious and anti-state DeFi protocols abandon maintaining transparent versions of their protocols, with all new upgrades happening on Dark Ethereum.
+ 
+
+
+# Appendix
+
+## Aztec Network
+**Type: Ethereum Layer 2**
+
+Aztec Network is an open source layer 2 network for Ethereum that is currently live and offers both privacy and scalability features.
+
+Aztec Connect is the toolkit that allows private applications to be developed on the Aztec Network. It includes the SDK which makes it easier to build front-ends for Aztec Connect integrations, in addition to Bridge Contracts that makes it easier to interface between an existing application on mainnet Ethereum and Aztec's roll up. Bridging allows existing applications to utilize the privacy and scalability of Aztec without having to redeploy contracts.
+    * https://medium.com/aztec-protocol/aztec-network-launches-first-ever-private-defi-solution-for-ethereum-e5ec7624d430
+
+zk.money is Aztec Network's in-house dapp that allows individuals to deposit and withdraw arbitrary amounts of assets with current support for ETH, DAI and renBTC. This provides privacy when sending those assets to other individuals. The anonymity set is based on the asset and maximum deposit amount.
+
+For example, the size of the anonymity set for withdrawing 1 ETH are the people who deposited 1 ETH combined with 5 ETH, 10 ETH, and 30 ETH.[^a] As of September 27, 2022 the deposit amounts in zk.money for ETH are as follows: [^a2]
+* 0.1 ETH ~ 23,784 deposits
+* 1 ETH ~ 5,747 deposits
+* 5 ETH ~ 1,197 deposits
+* 10 ETH ~ 681 deposits
+* 30 ETH ~ 121 deposits
+
+zk.money cannot be freely used and is not censorship resistant. There are system-wide daily asset deposit caps and they also rate limit individual deposits based on a user's IP address. [^y]
+
+Aztec's L2 rollup technology is currently run with Aztec as the sole rollup provider. There are plans to onboard more rollup providers "later this year". Once that happens, the system will be more decentralized. [^b] "Liveness and access to the Aztec system is controlled by two multisignature wallets" [^c]
+
+UltraPlonk is the name of Aztec Networks's zk-snark which is a PLONK that supports lookup arguments and custom gates called *plookup gates* [^3] [^4]. A trusted setup was required and took place in 2019. [^9] PLONK is a proof system originally released in 2019, which was invented by Aztec's Ariel Gabizon and Zachary J. Williamson. 
+    * https://eprint.iacr.org/2019/953
+
+Aztec are developing the privacy programming language Noir, which is a domain specific language (DSL) that is inspired by Rust, which can be used to create and verify zero-knowledge circuits.[^x]
+
+There are no native network privacy features. Multiple users have complained about not being able to access zk.money with Tor [^1]. Additionally it has been reported that zk.money does not function properly when connecting to a local node, compared to MetaMask's default connection to Infura. [^2]
+
+
+
+[^a]: https://medium.com/aztec-protocol/infinite-privacy-new-anonymity-paradigms-with-aztec-network-1b02e84bbce2
+[^a2]: https://dune.com/jaosef/Aztec-2
+[^b]: https://aztec-protocol.gitbook.io/zk-money/faq/frequently-asked-questions
+[^c]: https://medium.com/aztec-protocol/layer-by-layer-a-guide-to-aztecs-security-approach-87df087093c0
+
+[^x]: https://noir-lang.github.io/book/index.html
+
+[^y]: https://twitter.com/aztecnetwork/status/1560710578254925824
+
+[^1]: https://discord.com/channels/563037431604183070/809171527466614784/880050517328412682
+[^2]: https://github.com/AztecProtocol/AZTEC/issues/610
+[^3]: https://twitter.com/aztecnetwork/status/1303315879392874496?s=20&t=2oruQV0Mop3EJIuc1TNRSg
+[^4]: https://eprint.iacr.org/2020/315
+[^9]: https://medium.com/aztec-protocol/aztec-announcing-our-ignition-ceremony-757850264cfe
+
+
+## Tornado Cash
+Tornado Cash (TC) is a mechanism where by users can anonymize a transaction by distrupting the link between sending and reciving wallets. TC is a Dapp/ fully decentralized protocol with DAO governance for private transactions on Etherum. The protocol is based on zero knowledge proofs and the code is available open source on github. 
+
+
+Users put deposits into a TC pool and generate a private note. The private note is a key for the user to access funds later. TC classic fixed deposits to the following denominations: 0.1, 1, 10 and 100ETH. TC Nova lifted this restriction making the protocol more flexible.  This also allowed anonymity sets to grow larger by not restricting the deposits to fixed amounts.  0.1ETH and 100ETH are usually smaller in number of deposits, while 1 and 10ETH anonymity sets are almost double of the size, therefore have much bigger anonymity set.
+
+
+The anonymity set is defined by the number of the deposits in the given ETH denomination. The amount of deposits creates the range of possibilities from which each transaction could have originate. Although the mechanism uses zero knowledge proofs, and the anonymity set can be quite large, there are many usablity issues that  compromise the anonymity and privacy of TC pool.These include, depositing and withdrawing funds using the same wallet. 
+
+
+1) Purpose
+    * Send anonymous transactions
+2) Where is zk used?
+    * To process a deposit, TC generates a random area of bytes, computes it through the Pedersen Hash then sends the token & the 20 MiMC hash to the smart contract. The contract will then insert it into the Merkle tree.
+    * To process a withdrawl, the same random bytes is split into two separate parts: the secret on one side & the nullifier on the other side. The nullifier is hashed. This nullifier is a public input that is sent on-chain to be checked with the smart contract & the Merkle tree data. It avoids double-spending for instance.
+3) Privacy PoV
+    * Privacy is enforced once a ethereum is committed to a TC pool. 
+    * There are several user best practices that are recommended but are not enforced or addressed by TC such as: use of a relayer for gas payments to withdraw funds from an address with no pre-existing balance. 
+4) Maturity 
+    * As of June 19th, 2022, Tornado Cash had a total 36k users and 3.25m ETH deposited in 138.5k deposits. Based on this, the average size of a transaction was about 23.5ETH
+    * There are two versions of TC, TC Classic in mainnet production, and TC Nova in mainnet beta. 
+5) What can Ethereum Learn (wrt Privacy)
+    * It is not enough to have a robust anonymity algorithm. The most vulnerable parts of the system are depositing and withdrawing funds as well as funding anonymous transactions. This is where anonymity is compromised.
+    * There is regulatory risk associated with anonymity layers. 
+    
+
+Black Sky Nexus conducted its research on Tornado Cash in June 2022, before sanctions occurred.
+
+
+
+
+## Mina
+Mina is a lightweight layer 1, where users and validators do not have to download and verify the entire chain. The project is currently under development by [O(1) Labs](https://o1labs.org/), and was initially called Coda, but was rebranded to Mina as of October 2020. Their focus is on creating a succinct blockchain using zk-SNARKs, compressing the blocks into a proof (certificate), which are verified directly by end-users instead of searching through the entire block history. Each of these zk-SNARK proofs is recursively composed to a blockchain that has a permanent size of ~22KB. This brings solutions to the problem of scalability and decentralization of the network, as the entire network can be secured by downloading few kilobytes of data, and a user does not need any special hardware to participate as a node. 
+
+This innovation must not be confused with transactional privacy and anonymity, which is not an immediate priority for the developing team. Mina is **not a private blockchain and transactions are transparent.** Mina does not include any concept of base layer privacy, shielded transactions, or network privacy.
+
+Mina's marketing is misleading when it comes to the tagline on their homepage of "Mina is building the privacy and security layer for web3." Even Paradigm CTO and research partner Georgios Konstantopoulos doesn't fully understand what Mina is doing. In a recent blog article, *[Hardware Acceleration for Zero Knowledge Proofs](https://www.paradigm.xyz/2022/04/zk-hardware)*, he states:
+
+> "Private L1s: L1 chains like Aleo, Mina, and Zcash allow transactors to hide senders, receivers, or amounts using ZKPs, either by default (Aleo) or as an opt-in (Mina and Zcash)" 
+
+The problem is, there is no concept of opt-in private transactions in Mina: not in their current mainnet, nor in their roadmap.
+
+For Mina, privacy means a private gateway between web2 and web3 apps, where web2 user data can be used as a web3 oracle, while keeping that user data private. This is accomplished with zkApps, Mina's application development framework that interacts with HTTPS to create proofs verifying that data was on a specific website's server at a specific time. [^mi01] Regardless of user data in a zkApp being private, what will not be private is the sender, receiver, or amount, at least not based on the existing protocol design. There does not exist transaction privacy in their latest roadmap (update this)
+
+Mina was originally based on Groth16, but O(1) Labs upgraded to a custom SNARK based on PLONK, called Kimchi, which utilizes the Pallas and Vesta curves developed by Zcash for Halo 2. This allows fo a trustless setup and recursion [^mi02]. Pickles is the name of O(1) Labs recursive SNARK.
+
+
+Mina provides quarterly ecosystem roadmap updates [^1] and includes a fairly ambitious amount of upcoming work, such as bringing zkApps to production and connecting HTTPS to Mina's blockchain with zkOracles. Looking at the roadmap and the running list of features, there is more to be developed in the future than what is already currently available. [^2]
+
+[^mi01]: https://minaprotocol.com/blog/building-a-private-gateway-between-the-real-world-and-crypto-three-use-cases
+
+[^mi02]: https://minaprotocol.com/blog/kimchi-the-latest-update-to-minas-proof-system
+
+
+## Anoma
+Anoma is a new privacy-focused protocol that includes native features for counterparty discovery based on matchmaking *intents*, with support for multi-chain atomic settlements [^ano1]. 
+
+Anoma is being developed by Heliax AG (Heliax), who are the founding development team funded by the Anoma Foundation, the latter of whom raised a $6.8m seed round in January 2021 and a $26m follow-on round in November 2021, valuing Anoma at $260m. [^ano2]
+
+The narrative around the Anoma protocol is heavily constructed around this concept of *intents* as a core aspect of the protocol design. Intents are envisioned to enable "any digital representation of value to be used as a means of exchange, payment or trade". Essentially, intents are a way for a user of the protocol to broadcast their desire to acquire a good or service for a particular price or within a particular price range.
+
+Anoma has broad goals for intents to be used for the bartering of goods and services in local physical communities [^ano3], but there are currently no technical designs for how to realistically establish such barter economies.
+
+In Anoma, *validity predicates* contain the logic that communicates with the state machine to ultimately identify whether a state change is valid. The validity predicate check is stateless and can be parallelized for any number of accounts that are involved in a transaction.
+
+Initially Anoma is based on Tendermint, a Byzantine Fault Tolerant (BFT) consensus mechanism, but later versions will deploy [Typhon](https://specs.anoma.net/main/architecture/consensus/typhon.html), which is Heliax's implementation of Heterogeneous Paxos that enables consensus to be shared across the states of independent (heterogeneous) chains, enabling multi-chain atomic settlement in a singular consensus round. A heterogeneous chain within the Anoma network is known as a fractal instance. [^ano4]
+
+Anoma utilizes zk-SNARKs to provide transaction privacy, initially with the Multi-Asset Shielded Pool (MASP) that offers a singular anonymity set for both Ethereum and IBC-compatible assets [^ano5] within a single fractal instance. Namada is the name of Anoma's initial fractal instance, which utilizes Tendermint and will include the MASP. Future versions of Anoma will replace the MASP with [Taiga](https://github.com/anoma/taiga/blob/main/book/src/overview.md), which will eventually support a singular anonymity set across multiple fractal instances. [^ano6]
+
+Heliax is also developing various languages that will spawn private and verifiable interfaces, protocols, and applications within the Anoma network. These languages include Juvix, Alucard, and Vamp-IR. Together, this set of languages is known as the J-group. [^ano7]
+
+Anoma will use [Ferveo](https://eprint.iacr.org/2022/898), a threshold transaction decryption scheme for front-running protection, where the set of transactions for a newly proposed block are encrypted, meaning validators have no information about the contents of the transactions and hence do not have a game-theoritic advantage over other users.
+
+The Ferveo threshold decryption mechanism is great for censorship-resistance, ensuring that validators behave in a credibly neutral way, which has become a more prominent design consideration in consensus protocols, after the August 8, 2022 US Treasury sanctions against Tornado Cash [^ano28].
+
+The two main problems Anoma is trying to address are that of scaling the number of parties involved in financial transactions ("n-party bartering") and bringing privacy to these types of transactions.
+
+
+[^ano1]: Anoma.net&#8204;. https://anoma.net/. Accessed 2022.
+[^ano2]: Bourgi, Sam. “Polychain Capital Leads Anoma Network’s $26M Raise.” Cointelegraph, 17 Nov. 2021, https://cointelegraph.com/news/polychain-capital-leads-anoma-network-s-26m-raise.
+[^ano3]: Goes, C, et al. “Anoma: Undefining Money Vision Paper.” 20 July 2021. https://anoma.net/vision-paper.pdf.
+[^ano4]: Sheff, Isaac. “Heterogeneous Paxos and Multi-Chain Atomic Commits.” Anoma (blog), 13 Sept. 2021, https://anoma.net/blog/
+[^ano5]: Yin, Awa Sun. “An Overview of Anoma’s Architecture.” Anoma (blog). 3 June 2022, https://medium.com/anomanetwork/an-overview-of-anoma-s-architecture-26b72e8c9be5.
+[^ano6]: Discord. “Anoma Discord Channel.” Accessed 2022.  https://discord.com/channels/833618405537218590/996749519284875265/1012047414699503778.
+[^ano7]: Specs.anoma.net&#8204;. “Anoma Specifications: J-Group.” Accessed 2022. https://specs.anoma.net/main/architecture/language/j-group.html. 
+[^ano28]: U.S. Department of the Treasury. “U.S. Treasury Sanctions Notorious Virtual Currency Mixer Tornado Cash.” 8 Aug. 2022, https://home.treasury.gov/news/press-releases/jy0916.
+
+## Penumbra
+* Penumbra is a layer 1 privacy solution initially focused on the Cosmos ecosystem. Penumbra is a delegated proof of stake blockchain that utilizes Tendermint consensus, with modifications that allow delegators to have privacy.
+* Penumbra is compatible with IBC but is not using the Cosmos SDK to develop its blockchain since Cosmos SDK is for developing blockchains with public ledgers and Penumbra's ledger is fully private. There is no concept of transparent transactions in Penumbra.
+* Penumbra is initially focused on delivering a narrow scope of functionality which is basically a private DEX for IBC-compatible assets, utilizing their ZSwap primitive. With ZSwap, both trading and market making is private, hence resolving MEV issues. Beyond this, Penumbra also supports generic transactions (like sending a payment to another Penumbra address), in addition to on-chain governance features like staking to validators, submitting, withdrawing and voting on proposals.
+* Penumbra Labs is performing the vast majority of design and development at this stage and they develop in the public, in Discord and GitHub. They raised a $4.75m seed round in November 2021 [^ap]. Henry de Valence is the founder of Penumbra Labs, and previously he did cryptography at the Zcash Foundation.[^zp]
+* The key hierarchy used by Penumbra is based on the Zcash Sapling, with a few modifications such as using the BLS12-377 proving curve instead of BLS12-381. BLS12-377 was initially defined for usage in [Aleo's Zexe](https://eprint.iacr.org/2018/962).
+* Penumbra is initially utilizing the Groth16 proof system. Even though the industry seems to generally be moving towards PLONK-based systems, de Valence's reasoning for choosing Groth16 is due to the small proofs and high performance.
+* Since Penumbra Labs aims to support active market making as part of their fixed functionality, they want to form proofs for a transaction within their 5 second block interval, so market makers can efficiently react to price information. Groth16 satisfies this use case well for them. He notes that Penumbra Labs is interested in moving towards a PLONK-based system in the future, if/when a decision is made to officially support programmability and general functionality
+
+
+
+[^ap]: https://penumbra.zone/blog/penumbra-labs-raises-seed-round-to-build-private-exchange/
+
+[^zp]: https://penumbra.zone/team/
+
+
+
+
+## Espresso
+1) Purpose
+   * Benjamin Fisch, one of Espresso's co-founders was also the co-founder of Findora, which is another privacy L1 that ended up with many lawsuits. Benedikt Bünz, Espresso's chief scientist also used to work at Findora. They both were / are affiliated with Dan Boneh's Applied Cryptography Group at Stanford.
+   * Espresso is developing both a new L1 blockchain in addition to CAPE, which is a smart Contract that gives privacy controls to new tokens minted on Ethereum or by wrapping pre-exisiting tokens. 
+   * Their value proposition is about "configurable privacy" and who can view transaction data and history. Benjamin Fisch was previously trying to bring these ideas to life in Findora.
+   * Low fee, high throughput EVM compatible blockchain. 
+
+2) Where is zk used?
+    * zk-rollup
+    * Decentralized private computation with [VERI-ZEXE](https://www.espressosys.com/blog/veri-zexe-decentralized-private-computation-with-universal-setup)
+3) Privacy PoV
+    * we can give more granular control to view the data in a transaction 
+4) Maturity 
+    * CAPE is on an Ethereum testnet (Gorli)
+    * There does not seem to be a testnet or devnet yet for their L1 blockchain
+5) What can Ethereum Learn 
+     *?
+
+
+## Aleo
+**Type: Layer 1**
+* Aleo is a new layer 1 privacy blockchain and ecosystem committed to helping make it easy for decentralized and private applications to be created using the Aleo Virtual Machine (AVM).
+    * Besdes the blockchain, a toolkit is being developed which includes:
+        *  Leo, a circuit compiler programming language, inspired by Rust yet syntactically similar to Javascript and Typescript. Leo will allow formally verifiable apps to be developed.
+        * Aleo Package Manager, a registry of zero-knowledge circuits.
+        *  Aleo Studio, an IDE optimized to build Aleo applications, using the Leo language and the Aleo Package Manager.
+        *  SnarkOS, a decentralized operating system enabling applications to verify and store state publicly, without compromising application privacy.
+* Aleo had three trusted setup ceremonies, one for the universal Marlin zk-SNARK, and two ceremonies for two  diffferent Groth16 SNARKs.
+* A core component of Aleo is Zexe (zero knowledge executions), a new cryptographic primitive to support *decentralized private computation*. With Zexe, transactions only contains serial numbers of the consumed records (death predicates), commitments of the created records (birth predicates), and a zero knowledge proof which verifies that it is correct. All serial numbers on the ledger are collected in a list that cannot contain duplicates. Users can choose to comply with regulatory measures by sharing their view key.
+* Aleo is using Proof-of-Stake (PoS) for block production,  and PoNW (Proof-of-Necessary-Work) for proof generation. The PoS used is also known as AleoBFT (Aleo Byzantine Fault Tolerance).
+* Aleo is not focusing on network privacy. There are discussions on collaborating with other teams that are building mixnets, such as Hopr, but at this stage it is not a priority
+* To comply with regulatory measures community contributors, called Ambassadors, are obliged to KYC.
+* Aleo recently launched their third testnet, Testnet 3, in August 2022. They are expected to take Aleo to mainnet either December 2022 or January 2023.
+* Aleo is one of the most complex progammable privacy L1 projects, which has raised over $228m, including a $28m Series A and a $200m Series B. Aleo was originally conceived by co-founder Howard Wu at UC Berkeley in 2016, when he was researching progammable zero-knowledge. In 2019, Wu co-founded the company alongside Michael Beller, Collin Chin, and Raymond Chu.
+
+
+
+
+https://www.bloomberg.com/press-releases/2021-04-20/aleo-raises-28m-to-launch-the-first-platform-for-fully-private-applications
+
+
+
+## Zcash
+- The Zcash community is moving in the direction of developing generic shielded assets (ZSA) and private DeFi. The team QEDIT was funded with a $1,187,615 grant to lead this initiative. [^zc1] QEDIT is also a defense contractor, sharing a DARPA grant with Galois to help the US DoD use zero-knowledge proofs. [^zc2]
+- Zooko guesses it will take about 5 years to add full progammability to Zcash.[^zc7]
+
+
+[^zc2]: https://www.calcalistech.com/ctech/articles/0,7340,L-3849915,00.html
+
+[^zc7]: https://twitter.com/zooko/status/1560326148675944448?s=20
+
+[^zc1]: https://grants.zfnd.org/proposals/657686651-shielded-assets-zsa-uda-for-defi-on-zcash
+
