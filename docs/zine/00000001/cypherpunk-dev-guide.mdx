@@ -1,0 +1,162 @@
+---
+sidebar_position: 2
+sidebar_label: 'Cypherpunk Development Principles'
+description: 'An open source guide to catalyze the creation of cypherpunk tools'
+image: /img/00000001/headers/devguide.jpeg
+tags: [Anonymous Functioning, Guides]
+---
+
+import ImgUp from '@site/static/img/dec_up.svg';
+import ImgDown from '@site/static/img/dec_down.svg';
+import Header from '@site/docs/img/00000001/devguide.jpeg';
+
+# Cypherpunk Development Principles
+<span class="doc-subtitle">An open source guide to catalyze cypherpunk tools</span>
+
+###### By Samadhi, Stellar Magnet, UniPuff
+
+<ImgUp className="img-up" />
+<div class="header"><img src={Header} /></div>
+<ImgDown className="img-down" />
+
+A historic event in cryptocurrency happened August 8, 2022: smart contracts related to Tornado Cash [were sanctioned](https://home.treasury.gov/news/press-releases/jy0916) by the U.S. Department of the Treasury’s Office of Foreign Assets Control (OFAC), placing the privacy of Ethereum users at risk. 
+
+These sanctions set off a ripple effect exposing many centralized choke points in the world of Ethereum. Not only was the Tornado Cash GitHub organization banned, but personal GitHub accounts of Tornado Cash contributors were banned as well. Circle froze 75,000 USDC on the sanctioned contracts and Infura and Alchemy blocked remote procedure call (RPC) requests to those contracts. The main website `tornado.cash` was taken down in addition to the `tornadocash.eth.limo` domain. dYdX also [blocked accounts](https://cointelegraph.com/news/dydx-confirms-blocking-and-unblocking-some-accounts-linked-to-tornado-cash) that had interacted with Tornado Cash, and Flashbot's MEV-boost relayer code now also [excludes transactions associated with Tornado Cash](https://www.coindesk.com/tech/2022/08/23/as-censorship-on-ethereum-begins-could-this-open-sourced-code-help-counter-it/). Alexey Pertsev, an open source Tornado Cash developer, [was arrested in the Netherlands](https://www.coindesk.com/policy/2022/08/12/netherlands-arrests-suspected-tornado-cash-developer/) the same week OFAC sanctions went into place.
+
+The acts of sanctioning a smart contract and arresting an open source developer of a decentralized protocol are unprecedented. Coin Center immediately began legal analysis on the [constitutionality of sanctioning a smart contract](https://www.coincenter.org/analysis-what-is-and-what-is-not-a-sanctionable-entity-in-the-tornado-cash-case/).
+
+One positive outcome of the rampant Tornado Cash censorship is that the cypherpunk spirit has been reawakened within the crypto community, with many now speaking louder and more confidently about the importance of privacy, decentralization, and censorship resistance. 
+
+There was a time in the history of cryptocurrency when people were more interested in building truly decentralized, censorship resistant applications, but as cryptocurrency quickly became a full fledged industry, flush with billions of dollars of venture capital, the community transitioned from a small cypherpunk movement valuing privacy to many projects prioritizing growth and centralization over some of the (loose) principles upon which the community was founded.
+
+Cypherpunks seek to create tools that are "extralegal,” meaning: "not regulated or sanctioned by law". The only real way this construct is possible is with true decentralization while ensuring that a particular tool isn't dependent on the service of a third party, such as a company or a poorly designed "decentralized protocol" that makes compliance decisions on the user’s behalf. For example, regardless of US sanctions being applied to several smart contract addresses, they still manage to exist on the Ethereum blockchain. Similar to how blockchains like Bitcoin or Ethereum can be extralegal, it should be possible for additional applications that are censorship resistant and extralegal like blockchains to exist.
+
+We would like to present an open source guide aimed at developers wishing to create more cypherpunk tools, with best practices that will:
+
+1. **Protect Your Users**: Protect the privacy and security of the users of your tools.
+2. **Decentralize Intermediaries**: Reduce users needing to rely on centralized systems hosted by you (the developer) or third parties.
+3. **Protect Yourself**: Protect your identity as a developer, protect your code, and your community building efforts.
+
+This guide is not written by lawyers, and is also not legal advice. This is more about providing development advice and guidance to rewind to some of the initial principles upon which the cryptocurrency community was founded upon and also offer self-defense practices when developing tools for privacy, freedom, and sovereignty that currently exist in a very gray regulatory environment.
+
+
+## Browsers Are Difficult to Trust
+
+Most DeFi apps created and used today are built as webapps in the browser. Because of the integrated relationship between websites and browsers, it is not only easy for adversaries to track a user across different domains, but it is difficult for that user to detect they’re being tracked.
+
+While the developer may promise not to install trackers or to deliberately log usage data from a dApp, and therefore deem themselves trustworthy, the software can still be compromised or leak data. This is always a threat for the user.
+
+Tor Browser was made to make browsing high-profile websites safe by disabling cookies, JavaScript, and other security threats intent on compromising user privacy. There needs to be comparable regard for appropriate security in web3. 
+
+The problem is many dApps today fail up against cookie/fingerprinting protections. Fingerprinting is known to be less of a hindrance to applications, but there are cases of dApp's failing to operate without it, such as in Aztec's zk.money V1 frontend. Another example is the Polygon dApp, which fails to function in Firefox without enabling cross-site tracking and fingerprinters. To better understand why this is the case would require a deeper technical analysis. Nevertheless, it is unclear to the user whether they are safe from tracking within this application.
+
+### Principle #1: When building browser-based apps, assume users are blocking cookies and fingerprinters 
+
+1. Not all applications need cross-session storage with cookies. Usually features that require storage are a convenience for users and not a functional necessity. In the instance when cookies are a convenience, they should be treated by developers as optional, allowing the condition that cookies can be disabled. Don't allow the application to fail entirely when cookies are disabled.
+2. Check that your application works with the strictest fingerprinting settings in the most commonly used browsers: Brave, Firefox, and Chrome. See the [Mozilla wiki on fingerprinting techniques](https://wiki.mozilla.org/Fingerprinting).
+3. Ensure your application works in the Tor Browser and/or when it is accessed in Brave in a "New Private Window with Tor".
+
+
+## Native Applications Are Easier to Trust
+While native applications also store information locally, which can be compromised, the process of tracking and surveillance is generally less standardized for native applications than with websites and browsers. To wear the tin-foil hat for a moment, most browsers are megalithic code bases which are not fully open-sourced. Meanwhile the market is consolidating to Google. It is not unheard of for malicious hackers to [target](https://www.bleepingcomputer.com/news/security/google-patches-new-chrome-zero-day-flaw-exploited-in-attacks/) and [exploit](https://www.bleepingcomputer.com/news/security/chrome-zero-day-used-to-infect-journalists-with-candiru-spyware/) browsers.
+
+The web has a long history of struggle with legal institutions. Dark markets like AlphaBay, as well as torrent archives like the Pirate Bay, and information brokers like Wikileaks, have all undergone immense pressure, with websites DoS attacked, servers raided, and maintainers persecuted.
+
+As we have seen with [Larry Harmon's arrest](https://www.coindesk.com/markets/2020/02/13/us-doj-calls-bitcoin-mixing-a-crime-in-arrest-of-software-developer/) for operating the Helix mixer, the US DoJ is willing to consider developers liable. However, in the case of Helix, Harmon’s role was active in onboarding users to the mixer, hosting the infrastructure, and taking a fee. Although Tornado Cash has come under regulatory pressure with recent sanctions, the developers have not yet been treated as criminals in the same way as Helix, at least not yet in the US, likely due to the fact that Tornado Cash's smart contracts are automated and decentralized, so users interact directly with the protocol.
+
+As is the case with AlphaBay, PirateBay, Silk Road; hosting a central server means directly supporting the operation of the network and therefore being more at risk to liability for those operations. Central servers also demand more trust from the user who expects their usage and connections not be logged by servers. **Often logged information can lead to leaks from hackers or in the event of seizure by legal or physical force.**
+
+Many applications today, such as Aave, operate servers to index data, so the more frequently accessed information loads faster for users. These applications aren't really decentralized due to such dependendencies. Fully native and decentralized applications assume less liability for the developer, as [publishing code should be considered free speech](https://www.eff.org/deeplinks/2022/08/code-speech-and-tornado-cash-mixer). When built in the best way, a user of native applications will be communicating directly from their computer to the nodes of various decentralized protocols, as opposed to any infrastructure or services registered or run by the developer or other third parties.
+
+### Principle #2: Build native applications instead of web applications
+As an alternative to browser-based applications, you can port web code to run as a native application. The following frameworks will build a native binary from web code for all major operating systems:
+1. [Electron](https://github.com/electron/electron) is a popular choice to run a JavaScript/HTML webapp natively. However it uses Chromium internally, which makes the binary excessively large and often slow. There are methods to speed up performance by running processes in a background server as detailed in *[The Secret of Good Electron Apps](https://archive.jlongster.com/secret-of-good-electron-apps)*.
+2. [Tauri](https://github.com/tauri-apps/tauri) is a more streamlined option which builds small and more efficient binaries if you are able to work with a Rust library.
+
+
+### Principle #3: Don't manage your own server for data indexing and instead explore decentralized providers.
+There are at least three offerings to consider that are more decentralized or will be more decentralized in the near future as alternatives to operating a centralized server for indexing and querying data that is specifically not easily or quickly accessed with an RPC call:
+1. [TrueBlocks](https://trueblocks.io/) offers a local-first solution that indexes EVM-based blockchains, utilizing bloom filters to reduce the size of data that gets stored locally. Compared to other solutions presented below, TrueBlocks wins when it comes to censorship resistance since it doesn't rely on a network of actors to serve the data.
+2. [The Graph](https://thegraph.com/docs/en/) offers a more decentralized data access protocol. Subgraphs can be generated from smart contract code, and indexed by nodes in the network which will charge a fee for use. One drawback is that fees [have to be paid in the GRT token](https://thegraph.com/docs/en/querying/billing/) on the Polygon network, which can be a cumbersome process if you're building an Ethereum app and also don't want to deal with holding or regularly acquiring a volatile asset like GRT.
+3. [Covalent](https://www.covalenthq.com/) offers an alternative, although it seems the network isn't yet fully decentralized, with the main data indexes still managed by the single founding company, hence greater censorship risks until the process becomes more decentralized. With Covalent, developers can pay fees in USDC and the protocol will then automatically market order the Covalent Query Token (CQT) to pay network operators. This is a better UX for developers as opposed to expecting them to hold a volatile asset to pay for infrastructure.
+4. While not currently live, [Laconic](https://www.laconic.com/blog/how-laconic-different) is offering a promising vision in the world of indexing and querying. They support the get_proof() RPC call, which is important for data verifiability. Additionally, there is not a single founding team and it hasn't been funded by venture capitalists. Instead, there are 7 initial founding partners, which is much better for decentralization. Users will be able to pay for queries in ETH, USDC, the Laconic Network Token (LNT), or other assets approved by the Laconic Network.
+
+
+### Principle #4: When building native applications, don't reinvent the wallet
+From a security or maintenance perspective, it’s not wise to roll your own wallet in your native application, unless of course the native application you’re building is a wallet. Instead, you can integrate [WalletConnect](https://docs.walletconnect.com/), which can be thought of as a wallet API or protocol. With WalletConnect, users will be able to utilize their Gnosis Safe, Ledger, Rainbow, Argent, and many other secure, trusted and well maintained wallets compatible with WalletConnect.
+
+One of the present limitations of WalletConnect is insufficient integrations with more widely used desktop wallets, such as MyCrypto. However, this means there is room in the market for someone to develop a desktop wallet that integrates WalletConnect.
+
+#### Technical Considerations
+
+If you are developing on Ethereum or an EVM-based chain, WalletConnect is the most universal API for communication between a dApp and wallet. The [WalletConnect](https://docs.walletconnect.com/tech-spec) protocol uses a bridge server between dApp client and wallet. In a standalone client, you can spawn a WalletConnect [bridge server](https://github.com/WalletConnect/walletconnect-monorepo) and communicate with it over [JSON-RPC](https://docs.walletconnect.com/json-rpc-api-methods/ethereum). If you are porting a webapp, or using Javascript, you can also use the client [libraries](https://docs.walletconnect.com/quick-start/dapps/client).
+
+
+
+### Principle #5: App binaries should be accessible from a decentralized storage service
+
+Sharing binary files for applications should be seen as an act of free speech, as doing so is offering users the choice to download applications and use them to their own ends. Hosting the binary file can also be decentralized using IPFS. This also provides a checksum for users to be sure the application has not been tampered. In this scenario, the only connection to developers is the developers' private key signature used to sign the binary as a means of attesting to its authenticity.
+
+If you host on IPFS, make sure the file is pinned and include the content identifier (CID) in the code repository or even as part of the release process. [See Augur's releases](https://github.com/AugurProject/turbo/releases) as an example.
+
+IPFS pinning still in some cases requires operating an IPFS node with full uptime so users can access the binary with greater reliability. There are pinning providers like [Pinata](https://www.pinata.cloud/), yet they don't accept crypto payments. You can ask members of your community to help run IPFS nodes and to pin the binaries, or as an alternative, you can look into [Arweave](https://www.arweave.org/), [Filecoin](https://filecoin.io/), or [Swarm](https://ethswarm.org).
+
+### Principle #6: Add a mixnet to offer the best privacy guarantees
+
+The way user's devices interact with the underlying network infrastructure is crucial for privacy and the best guarantee for this is a p2p network with multiple levels of encryption provided by nodes run by participants. For that reason, [Tor](https://blog.torproject.org/arti_100_released/) has been the holy grail of online privacy because of its special multi-layer encryption scheme. "Onion routing," as it is often called, dictates that an information packet from a client to a server must cross three levels of encryption provided by different nodes, one on top of another like an onion. This adds a bit of latency that makes the Tor browser notoriously slower than other browsers at launch, but it provides unrivaled protection of privacy. 
+
+However, Tor has a great vulnerability to sophisticated adversarial parties that have strong statistical software that can monitor the entire network’s ‘entry’ and ‘exit’ nodes, as this can deanonymize users and intercept one's IP address, enabling them to infer patterns of entering and exiting, correlating them back to the user. This issue has yet to be resolved by Tor development.
+
+But now there are new contenders, **mixnets**. It’s easy to confuse onion routing for mixnets, but Tor is not a mixnet. Mixnets emerged as a response to Tor's vulnerability in order to provide additional methods of shielding one's online identity. The way they work is that the traffic is not only sent through a network of multiple nodes, but timing obfuscation and decoy traffic is added, making deanonymization much more difficult.
+
+There are a lot of mixnets that can be integrated with your application, but particularly relevant are the ones that have incorporated blockchain infrastructure and crypto-economic incentives as they will be more likely to scale over time: 
+- [Nym](https://nymtech.net/) is a cryptocurrency-supported blockchain that provides financial incentives for node operators to run and maintain their nodes to a high standard by earning its native token NYM as a reward. Nym consists of various components that: a) provide strong encryption to prevent metadata leakage ([Coconut](https://nymtech.net/docs/stable/overview/private-access-control)), b) obscuring the source of communication by mixing traffic, c) make entering and exiting the network anonymous by creating decoy traffic.
+- [HOPR](https://hoprnet.org/) is another mixnet choice that also uses a crypto-economic model for its maintenance, rewarding node operators with HOPR token, using the Sphinx packet format to obscure networking metadata.
+- [Meson](https://mesonmix.net/) is an up-and-coming mixnet under development by Hash & Cloak and is a fork of [Katzenpost](https://katzenpost.mixnetworks.org/), which was created by the same researchers who are currently developing Nym. Its mainnet is expected to launch around 2023. The crypto-economics is unclear at this point, but given that this mixnet is developed by Hash & Cloak, who are a blockchain consulting firm, it is assumed that it will include incentives.
+
+
+## Decentralize the Intermediaries
+
+All dApps have to either query node(s) that know about the state of a blockchain or else the dApps themselves must include a blockchain node or light client. Moxie Marlinspike made a valuable analysis of the centralization of web3 in his article *[My first impressions of web3](https://moxie.org/2022/01/07/web3-first-impressions.html)*:
+
+> "Almost all dApps use either Infura or Alchemy in order to interact with the blockchain. In fact, even when you connect a wallet like MetaMask to a dApp, and the dApp interacts with the blockchain via your wallet, MetaMask is just making calls to Infura!"
+
+Whereas Infura, a liable corporation, is actively applying sanctions, as well as blocking RPC calls to the Tornado Cash smart contracts in addition to blocking users who live in [sanctioned countries like Iran, Syria, and North Korea](https://www.coindesk.com/policy/2022/03/03/metamask-infura-block-certain-areas-amid-crypto-sanctions-fury/). Ironically enough, even supposedly decentralized RPC providers like Pocket Network and Ankr are applying sanctions.
+
+
+### Principle #7: Run your own node and educate users to do the same
+
+The RPC is configured by the dApp developer, to access application state from the blockchain when a user wallet isn’t connected. The most obvious alternative to centralized RPC providers such as Infura is running your own node and educating users on how to run their own nodes. In the world of Ethereum, [DAppNode](https://docs.dappnode.io/get-started/intro) is making the process of running a node easier with a node management GUI. You can [buy their hardware](https://dappnode.io/collections/frontpage), or install their software [on your own hardware](https://docs.dappnode.io/get-started/installation/custom-hardware/installation/overview).
+
+Alternatively you and your app users can try using [SecureRpc](https://securerpc.com/), which doesn't seem to be censoring transactions and has a publicly accessible endpoint at `https://api.securerpc.com/v1`, although this does not solve for decentralization. This came up in our research, but we have not used or tested it extensively.
+
+Unfortunately both decentralized and censorship resistant RPC providers don’t yet exist.
+
+
+## Encourage a Strong Developer Ecosystem
+
+It is common for a project to produce a single dApp interface for an entire decentralized protocol. This unfortunately stifles innovation and open source contributions from the community and also means a lack of options. Some users may enjoy convenience, while others are willing to take greater efforts to ensure their security and privacy. Applications should not be one size fits all.
+
+The two pillars of the developer suite are an API and a command line interface (CLI). These are almost always developed for internal use by the developers but hardly ever polished and released as products of their own (especially CLI tools).
+
+For a user with both strong privacy needs and high technical proficiency, sticking to the command line is best for enhanced security. The no-nonsense nature of a command line tool can also be useful when a UI doesn't provide a useful feature or a power user wishes to develop a new feature quickly. These kinds of needs and solutions are how diverse ecosystems are built.
+
+For example Aztec Network has a CLI tool but only if you search [inside the source code](https://github.com/AztecProtocol/aztec-connect/tree/master/blockchain/src/cli). Currently their zk.money web app requires cookies be enabled with less-strict fingerprint blocking on Brave. A motivated user could write an interface with stronger privacy if these CLI tools were made more readily available and accessible.
+
+### Principle #8: Ship fully functional APIs and CLIs before GUIs
+The tools written as a developer should be polished and released. The two most useful and universal tools are:
+
+1. An API/library to use the underlying product. This is likely already built in source code, so good documentation and an expectation for users to work with the API makes for a complete product.
+2. A command-line tool for the main user flow. The program should support the basic actions supported in the UI (sending, receiving, depositing, withdrawing, etc). While an API works only with the language in which it was written, a CLI tool can be used from any language, allowing more versatility and universality for developers.
+
+## Protect Yourself
+
+You are not legally obliged as a developer to reveal information about your government identity. It's very common to use one's government identity in development, as it's easier to build trust, in addition to a following, when users already know you and are familiar with your prior reputation as a developer. It's not impossible to invent a new anonymous identity, though this route will take a considerable amount of time and effort to build up credibility associated with that identity.
+
+### Principle #9: Don't be shy about being an anon
+1. Create an anonymous digital identity.
+2. Ensure your code repositories are replicated on decentralized services or are self-hosted.
+3. When building a community around your application, consider alternatives to Discord.
+4. When paying for services and infrastructure, utilize services that allow anonymous service agreements that also accept cryptocurrency.
+
+There are a lot of ways to dox yourself and make mistakes. If you’d like to take extra measures on effectively creating an anonymous identity, you can follow this guide we created: [How to Anonymously Build and Contribute to Crypto Projects](https://hackmd.io/Pqyu7FXERaWNA-obOL66Ug).

@@ -1,0 +1,202 @@
+---
+sidebar_position: 2
+sidebar_label: 'How to Become Anonymous in Crypto'
+description: 'Black Sky Nexus Overview & Analysis'
+image: /img/00000001/headers/anon.jpeg
+tags: [Anonymous Functioning, Guides]
+---
+
+import ImgUp from '@site/static/img/dec_up.svg';
+import ImgDown from '@site/static/img/dec_down.svg';
+import Header from '@site/docs/img/00000001/anon.jpeg';
+
+# How to Become Anonymous in Crypto
+###### By UniPuff, Stellar Magnet
+
+<ImgUp className="img-up" />
+<div class="header"><img src={Header} /></div>
+<ImgDown className="img-down" />
+
+Crypto exists in a liminal space between transparency and privacy. On one hand, it fully embraces openness and lowering barriers to entry, from permissionless participation in networks and organizations to the funding of open-source products as public goods. But crypto’s origins are built upon the [cypherpunk values](https://activism.net/cypherpunk/manifesto.html) of cryptographic protection of personal information and web activity, with the option to selectively reveal oneself. Presently when it comes to Ethereum, the balance is tilting towards fully see-through plain text transparency. However, countercultural groups, such as the [lunarpunks](https://www.egirlcapital.com/writings/107533289), have emerged to address issues inherent in the public nature of Ethereum, attributing the issue of see-through plain text transparency to a corruption in the original crypto-anarchist values that first motivated the development of blockchain technologies. In essence, the lunarpunks are intent on bringing back elements of the original cypherpunk spirit within the relevant context of crypto in its present day iterations. 
+
+The following guide focuses on how to achieve greater privacy by creating an anonymous identity to more safely transact, develop applications, and participate in DAOs, such that individuals can find sanctuary in the panopticon of public blockchains.
+
+:::note COLLABORATION
+This guide rests "on the shoulders of anon giants", making use of resources such as [Mikerah's "anon-guide"](https://github.com/Mikerah/anon-guide), [0xngmi's "How to stay anon" guide](https://hackmd.io/YKjhguQES_KeKYs-v1YC1w?view), and [Seth For Privacy's "Privacy first steps"](https://sethforprivacy.com/posts/privacy-first-steps/). But most importantly, this guide is a living, breathing document intended as a collaborative tool. It is not fully comprehensive and can still use a section on SIM cards. If you wish to enrich this guide with more tools or tactics, feel free to submit an update and make a pull request by navigating to "Edit this page" at the bottom of the page. Otherwise, share your feedback about it in our [social space](https://discord.com/invite/TrFzBxzCHH).
+:::
+---
+
+
+
+
+
+## 1. Setting-up Firm Foundations for Your New Digital Identity
+
+It’s important to note that your digital presence has a lot of moving parts, and you can choose to start anonymizing any of them. However, if you aim for the most protection possible, it is good to start from scratch, setting a solid foundation through creating a new **digital identity**. This is the only part of the guide that is not optional if you want to maximize privacy and anonymity.
+
+### Start With Hardware and OS
+
+First things first, it’s essential to have a separate laptop and smartphone that are not linked to your true identity.
+* Use these devices whenever communicating or working as your new identity. [0xngmi's guide](https://hackmd.io/YKjhguQES_KeKYs-v1YC1w?view#Operations) goes into great detail on this path.
+* Ideally, avoid synching accounts across the smartphone and laptop used for your alternate identity. 
+
+
+Alternatively:
+
+* If you are not in a position to purchase new hardware, try using a virtual machine such as [VirtualBox](https://www.virtualbox.org/), and run a fully anonymized OS like [Qubes](https://www.qubes-os.org/) or [Whonix](https://www.whonix.org/wiki/Download).
+
+### Protect Internet Traffic through Privacy Browsers and Extensions
+
+Internet traffic is the biggest attack vector. Blocking ads, trackers, malicious links and fingerprinting is very important for privacy. Fortunately, there are browsers that attempt to route around various tracking methods natively, as well as plenty of open-source extensions to fill in the privacy blanks.
+
+**Browsers:**
+
+[Brave](https://brave.com/) is the go-to browser for crypto-related activities. 
+- Brave provides various traffic blocking options and allows for a great deal of customizability according to individual privacy needs. For example, if you want to be very aggressive, you may choose to block JavaScript and aim for a more classic read-only web experience.
+- Brave also provides a built-in non-custodial crypto wallet, an in-browser VPN, and the ability to directly open a new private window with Tor for selected sites.
+
+[Tor](https://www.torproject.org/) anonymizes internet traffic by shielding messages into multiple layers of encryption, which involve nodes that are spread all around the world.
+- Tor is a protocol, but the protocol is embedded within the [Tor Browser](​​https://www.torproject.org/download/). Similarly to Brave, the browser blocks all kinds of tracking and can do so more aggressively if desired.
+- While Tor is infamously slow at launch, it provides a level of anonymity that is incredibly hard to pierce through.
+- Note: Tor should not be used alongside a VPN, as it will [deanonymize you](https://www.privacyguides.org/basics/vpn-overview/#should-i-use-tor-and-a-vpn).
+
+
+Another option, albeit a less effective one for privacy protection, is creating a new browser profile in [Firefox](https://support.mozilla.org/en-US/kb/profile-manager-create-remove-switch-firefox-profiles) or [Chrome](https://support.google.com/chrome/answer/2364824?hl=en&co=GENIE.Platform%3DDesktop) (and their derivatives). This is an option that you should only consider if you have a very low [threat model](https://www.privacyguides.org/basics/threat-modeling/) when it comes to anonymity.
+
+**Extensions:**
+
+- If you are using a browser other than Tor, then it’s good to incorporate a suite of blocker extensions. Some great additions are [uBlock Origin](https://github.com/gorhill/uBlock#installation), [Privacy Badger](https://privacybadger.org/) and [HTTPS Everywhere](https://eff.org/https-everywhere).
+
+
+### Register a New VPN Account 
+
+If you aren’t using the Tor Browser or an OS like Whonix, then using a third-party Virtual Private Network (VPN) is a necessity if you want to maximize your sovereignty on the internet. Without a VPN, an ISP will be able to know exactly what websites you’re visiting. With a VPN, however, an ISP will only be able to know that you’re using a VPN. 
+
+Following [Seth For Privacy’s guide](https://sethforprivacy.com/posts/privacy-first-steps/), we recommend using [IVPN](https://www.ivpn.net/) or [Mullvad](https://mullvad.net/). Neither maintain user logs and subscriptions can be purchased in Bitcoin, Monero, or even by mailing an envelope of cash.
+
+### Create a New Email Address with a Private Email Provider
+
+There are a few different **private email providers** to select from with different trade-offs to consider. For *email recovery* options, ensure that you don't use an email that can dox you or your phone number.
+
+   * [Tutanota](https://tutanota.com/) is one of the best providers, as they have no history of sharing IP information with government agencies. For a premium account you can purchase [Tutanota gift cards with crypto](https://digitalgoods.proxysto.re/).
+   * [Mailfence](https://mailfence.com/) is another good option where it's easy to make multiple accounts. They have [good privacy principles](https://mailfence.com/en/private-email.jsp) and you can pay for an account with Bitcoin or Litecoin.
+   * [Proton Mail](https://proton.me/) is one of the most popular options, but they have a [history of sharing IP address logs with government agencies](https://thehackernews.com/2021/09/protonmail-shares-activists-ip-address.html). It's possible to pay for an account with Bitcoin.
+   * [Skiff Mail](https://skiff.com/) is a new provider. In their Discord [they claim they do not log IP addresses or other personal identifying information like MAC addresses](https://discord.com/channels/910310819139559454/910333450479865896/1006646088360534139).
+
+Additionally, if you wish to secure even greater anonymity when sending and receiving emails, you could use an email alias service like [SimpleLogin](https://simplelogin.io/) to shield your main email address and protect your inbox.
+
+
+### Use Trustworthy Password Manager and File Encryption Software
+
+As mentioned, online activity is the biggest attack vector, so what happens when spyware gains access to your desktop? [Zero-day exploits](https://www.pcmag.com/how-to/what-are-zero-day-exploits-and-attacks) aren’t uncommon, and important files or passwords must be protected, so password managers and PGP (Pretty Good Privacy) encryption are a must.
+
+- Use [KeyPassXC](https://keepassxc.org/) for managing passwords in a secure way without any cloud-sync. Make sure you consider storing a secure back-up somewhere with this choice so you don’t lose your passwords.
+- You can also use [Bitwarden](https://bitwarden.com/), which is also open source, but it has cloud-sync. Keep in mind that choosing a password manager with cloud-sync is a matter of sacrificing security for convenience. 
+- Install OpenPGP software such as [Kleopatra](https://apps.kde.org/kleopatra/) to encrypt and decrypt your files with your own unique signature (here's a very helpful [video](https://yewtu.be/watch?v=CEADq-B8KtI) to walk you through the process). This is especially important If you wish to store crypto wallet seed phrases or app API keys on your computer. 
+
+**Note: It is not recommended to store seed phrases for high value accounts on digital devices continuously connected to the internet due to their vulnerability to hacks.**
+
+## 2. Use Secure and Anonymous Online Tools
+
+Most cryptocurrency projects and DAOs still use highly centralized tools even for their most crucial operations. The obvious suspects are GitHub, Discord, Telegram, and Google Suite. Use of these tools makes the community around a project vulnerable to potential platform or state censorship. However, if you take privacy seriously, there are a lot of open-source alternatives to choose from.
+
+### Use a Self-hosted or Decentralized Git Service
+
+GitHub is the go-to collaborative code platform but they have a history of censorship that warrants skepticism for hosting code with them (e.g. deplatforming the Tornado Cash organization and its many developers). Some alternatives to consider:
+
+ * Use a self-hosting git service such as [self-managed GitLab](https://about.gitlab.com/install/) or [Gitea](https://gitea.io/en-us/).
+ * Another collaborative code environment is [Radicle](https://radicle.xyz/), which is a peer to peer network built on Git, and has been developed with censorship resistance in mind.
+
+:::warning
+Make sure you generate new SSH keys associated with your anon identity and email address.
+:::
+
+### Use Hosting Service Providers and Domain Registrars that Accept Crypto
+
+If you need to register a domain and create a hosted website, it’s recommended to utilize services that accept crypto payments. Any fiat bank transfer would compromise your real identity. Fortunately there are various service that accept crypto payments:
+
+   * [Njalla](https://njal.la/) can anonymously register domains which will technically be owned by Njalla, but you would be able to use it like you own it. They also offer virtual private servers (VPS).
+   * [Servers Guru](https://servers.guru/) and [Hostinger](https://www.hostinger.com/) are some additional options to consider for hosting, offering both VPS and dedicated servers that are quite affordable.
+   * If your project is oriented towards the Ethereum community, you could register a *.eth* domain with [ENS](https://ens.domains/), and associate an IPFS hash with that domain, which can be accessible via the Brave browser. 
+
+
+### Use End-to-end Encrypted Document/Collaboration Tools
+
+Documentation of knowledge is one of the cornerstones of building a project, and collaborative interfaces have signified a leap in productivity and knowledge sharing. Unfortunately collaborative editors such as Notion are riddled with privacy issues, such as whatever you store in Notion can be handed off to prying parties by Notion. So it is good to find apps that guarantee page contents are end-to-end encrypted.
+
+ * [CryptPad](https://cryptpad.fr/) is one of the most common tools to use for private note sharing and document collaboration. The interface is very easy to use but is limited for larger scale operations.
+ * [Skiff](https://skiff.com) is going in the direction of becoming a legitimate privacy-preserving contender to Notion, although the current Skiff features are more limited, and are focused on documentation, so they presently lack the core Notion-like ability of creating and cross-linking databases.
+ * [AFFiNE](https://github.com/toeverything/AFFiNE) is a very fresh end-to-end encrypted and open source collaborative knowledge management tool. It includes innovative features such as the ability to transform a page into a free-form canvas. It works well with Chromium, but beware that there may be sync issues if you’re using Brave.
+
+### Don't Do Core Operations on Discord
+
+Discord is a privacy hellscape. It doesn't offer end-to-end encrypted direct messaging or channels, is not open source, and is very easy to get terminally censored even as a false flag. If you need a chat option for core operations that you can trust, your best choices are:
+   * Host your own [Matrix.org](https://matrix.org/) server on your self-hosted domain and use the Element client for access.
+   * [Keybase](https://keybase.io/) offers end-to-end encrypted team chats and direct messaging. Users don't own the data, however, so there is some censorship risk. But this is a better option than Discord and has better UX compared to Element.
+   * [Urbit](https://urbit.org/) offers an interesting response to the problem of chat platform privacy. In contrast to other proprietary software, Urbit is a super-app with p2p messaging capabilities built into its basic infrastructure. Every participant enters the network with their own pseudonymous self-sovereign ID and you only need to know another person's pseudonym to be able to message them.
+       * Urbit is accompanied by its own GUI, Port which also allows users to interact with Urbit-native apps.
+       * The "Groups" app allows users to make their own private community chats, with the ability to make channels and publish files inside the group chat.
+  * Lastly, keep an eye out for what [Status](https://status.im/) and [DarkFi](https://darkrenaissance.github.io/darkfi/misc/ircd/ircd.html) are building. Status’s chat doesn’t appear to have team features yet, but they might offer these features at some point. DarkFi is developing a p2p irc that is still in an alpha stage of development. However, members of their community appear to be using it already for core operations.
+
+
+### Pay for Services Using Anonymized Crypto 
+
+As mentioned above, paying for services with crypto is the best way to not dox yourself through your bank account details. However, be aware that the most widely used cryptocurrencies operate on a public blockchain where transactions are fully transparent and can be traced back to your wallet. For this reason, you will need to make sure you use services that anonymize your crypto.
+
+For **Bitcoin**:
+   * You can acquire Bitcoin via a p2p market like [Bisq](https://bisq.network/) or [Local Bitcoins](https://localbitcoins.com/) and deposit that Bitcoin into a privacy preserving wallet like [Samourai Wallet](https://samouraiwallet.com/).
+ 
+For **Ethereum**:
+* You can anonymize your ETH with [zk.money](https://zk.money) by depositing ETH and then withdrawing after a certain period. For increased anonymity, deposit a lot of ETH at once, and then withdraw small amounts of that over time. For more details, refer to [our guide](https://nexus.blacksky.network/zine/00000000/how-to-anonymize-eth).
+ 
+Alternatively, the best option is to use **privacy coins** which enable anonymous and untraceable transactions by default:
+* **Zcash** [shielded transactions](https://z.cash/technology/) offers some of the best privacy guarantees.
+* **Monero** offers less privacy than Zcash shielded transactions, but there is greater adoption when it comes to being able to pay for services with Monero over Zcash. 
+
+:::success
+**Checkpoint**
+
+After having followed all the above steps and have all protections in place and working, you can now proceed to introducing your new anon identity to the world.
+:::
+
+## 3. Embrace Your New Digital Self
+
+
+### Create New Social Identities
+
+Anonymity is better done in the shadows of a pseudonym. Make sure you choose a 'nym that represents you (you are gonna be using this a lot) and make social media accounts with it to "legitimize" your new identity. A [Twitter](https://twitter.com/) account is a must to build up reputation among Crypto Twitter. [GitHub](https://github.com/), [Discord](https://discord.com/) and [Reddit](https://www.reddit.com/) accounts can be created on an as-needed basis, depending on the purpose of your identity. Just make sure to use your new anon email when signing up for social accounts.
+
+The crucial thing is to remain consistent y between all of your social profiles, in terms of display names, usernames, bios and details. Don't underestimate the use of non-technical measures for protection, as doxing is how most anons are unwillingly dragged out of their shell of privacy.
+
+:::danger
+Remember that all the above web apps have data extraction practices in play, so always make sure that you:
+
+a) use your new VPN or Tor
+b) **your new email**, and 
+c) stay consistent,
+
+**each time you access these accounts!**
+:::
+
+### Role Play is Your Friend
+
+Even with the most maximizing privacy preservation stack, there are a lot of ways to dox yourself and make mistakes. Mindful behavior and vigilance are equally important, as you don’t want to throw away all of your hard work due to a misguided tweet. 
+
+Sometimes using social media is unavoidable, such as the case when you're building your own project. Many anon devs have managed to safely use social media by adopting a **pseudonymous identity**. In doing so, make sure to not only adopt a name and consistent life history details, but *a whole personality* to accompany your new digital persona. This is the time to be creative and come up with your own character, vocabulary, and personality traits, and then be consistent about them.
+
+If you are planning on working on multiple projects, follow this guide from scratch and make sure to follow principles of **heteronymity**. Try to adopt a new digital identity plus persona for each of your individual projects.
+
+*If you want to dive deeper into anonymous identity play, make sure to check out [Zentaipunks](https://nexus.blacksky.network/zine/00000000/zentaipunks).*
+
+#### You are now ready to **hack away**!
+
+---
+
+###  Resources & References
+* *[Privacy Guides](https://www.privacyguides.org/)* for comprehensive tools and guides to protect your privacy
+* Mikerah's *[anon-guide](https://github.com/Mikerah/anon-guide)*
+* Lissy93's *[Awesome Privacy](https://github.com/Lissy93/awesome-privacy)* list
+* 0xngmi's *[How to stay anon](https://hackmd.io/YKjhguQES_KeKYs-v1YC1w?view)* guide
+* Seth For Privacy's *[Privacy first steps](https://sethforprivacy.com/posts/privacy-first-steps/)*
+* EFF's *[Cover Your Tracks](https://coveryourtracks.eff.org/learn)* tool for determining how protected you are against web tracking
+* EEF's *[Surveillance Self-Defense](https://ssd.eff.org/en/module-categories/tool-guides)* tool guides
