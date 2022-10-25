@@ -166,6 +166,22 @@
   text-rendering: optimizeLegibility;
 }
 
+@font-face {
+  font-family: 'Inter';
+  src: url('/static/fonts/Inter-Variable.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Lora';
+  src: url('/static/fonts/Lora-Variable.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
 
 
 
@@ -181,7 +197,7 @@
   --ifm-color-primary-lightest: #fc8fde;
   --ifm-code-font-size: 95%;
   --ifm-font-size-base: 110%;
-  --ifm-font-family-base: roboto, sans-serif;
+  --ifm-font-family-base: Lora, serif;
   --ifm-font-family-monospace: roboto-mono, monospace;
   --ifm-spacing-horizontal: 1.6rem;
 }
@@ -195,11 +211,11 @@
   --ifm-color-primary-light: #fb54cc;
   --ifm-color-primary-lighter: #fb62d0;
   --ifm-color-primary-lightest: #fc8fde;
-  --ifm-font-color-base: #ddd;
+  --ifm-font-color-base: #DAD8D9;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: #252024;
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
@@ -215,7 +231,7 @@
 }
 
 .hero__subtitle {
-  font-family: novecento-sans, sans-serif;
+  font-family: Inter, sans-serif;
   color: white;
   font-size: 2.5em;
 }
@@ -248,7 +264,7 @@
 
 
 .footer {
-  font-family: var(--ifm-font-family-monospace);
+  font-family: var(--ifm-font-family-base);
   font-weight: 400;
   font-size: 0.85rem;
   background-color: var(--ifm-background-color);
@@ -304,24 +320,23 @@
 
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: forma-djr-deck, sans-serif;
-  letter-spacing: 2px;
+  font-family: Inter, sans-serif;
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.0rem;
 }
 
 h2 {
-  font-size: 2.3rem;
-}
-
-h3 {
   font-size: 2.0rem;
 }
 
-h4 {
+h3 {
   font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
 }
 
 h5 {
@@ -329,9 +344,9 @@ h5 {
 }
 
 h6 {
-  font-family: novecento-sans, sans-serif;
+  font-family: Inter, sans-serif;
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -341,24 +356,31 @@ h6 {
 } 
 
 p {
-  font-family: var(--ifm-font-family-monospace);
+  font-family: var(--ifm-font-family-base);
   font-weight: 400;
   font-size: 1.07rem;
   text-rendering: optimizeLegibility;
 }
 
 .admonition-content p {
-  font-family: var(--ifm-font-family-monospace);
+  font-family: var(--ifm-font-family-base);
   font-weight: 400;
   font-size: 0.9rem;
   text-rendering: optimizeLegibility;
 }
 
 .markdown ul {
-  font-family: var(--ifm-font-family-monospace);
+  font-family: var(--ifm-font-family-base);
   font-weight: 400;
   font-size: 1.07rem;
   text-rendering: optimizeLegibility;
+}
+
+.alert {
+  --ifm-alert-background-color: var( --ifm-color-secondary-contrast-background );
+  --ifm-alert-background-color-highlight: rgba(235, 237, 240, 0.15);
+  --ifm-alert-foreground-color: var( --ifm-color-secondary-contrast-foreground );
+  --ifm-alert-border-color: var(--ifm-color-secondary-dark);
 }
 
 
@@ -502,7 +524,7 @@ iframe {
 .caption{
   display: block;
   text-align: center;
-  font-family: var(--ifm-font-family-monospace);
+  font-family: var(--ifm-font-family-base);
   font-weight: 400;
   font-size: 0.9rem;
   text-rendering: optimizeLegibility;
