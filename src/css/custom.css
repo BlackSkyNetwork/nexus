@@ -332,15 +332,15 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
-}
-
-h4 {
   font-size: 1.6rem;
 }
 
-h5 {
+h4 {
   font-size: 1.4rem;
+}
+
+h5 {
+  font-size: 1.3rem;
 }
 
 h6 {
@@ -348,6 +348,32 @@ h6 {
   font-size: 1.2rem;
   font-weight: 400;
   text-align: center;
+}
+
+@media screen and (max-width: 996px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+  }
+  
+  h3 {
+    font-size: 1.4rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+  
+  h5 {
+    font-size: 1.1rem;
+  }
+  
+  h6 {
+    font-size: 1.0rem;
+  }
 }
 
 .table-of-contents, .menu__link {
@@ -410,11 +436,8 @@ p {
 
 blockquote p {
   color: var(--ifm-color-primary-lightest);
-  font-family: forma-djr-deck, sans-serif;
   font-weight: 500;
   font-style: italic;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
 }
 
 blockquote {
@@ -428,16 +451,15 @@ blockquote {
   text-align: center;
 }
 .zine-index a {
-  font-family: forma-djr-deck, sans-serif;
-  letter-spacing: 1px;
-  font-size: 2.4rem;
+  font-family: Inter, sans-serif;
+  font-size: 2.0rem;
   color: var(--ifm-font-color-base);
   text-decoration: underline;
 }
 
 @media screen and (max-width: 996px) {
   .zine-index a {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 }
 
@@ -467,7 +489,7 @@ blockquote {
 
 @media screen and (max-width: 996px) {
 .doc-subtitle {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 }
 
