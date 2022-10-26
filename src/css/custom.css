@@ -271,15 +271,15 @@
 
 @media screen and (max-width: 996px) {
   .heroBanner_src-pages-index-module {
-    padding: 1.5rem;
+    padding: 0.8rem;
   }
 
   .hero__title {
-    font-size: 4.2em;
+    font-size: 4.4em;
   }
 
   .hero__subtitle {
-    font-size: 1.8em;
+    font-size: 1.7em;
   }
 }
 
