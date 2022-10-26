@@ -122,7 +122,7 @@ Anoma predominantly describes and presents “transparent” Anoma in its whitep
 #### Public Validity Predicates Leak User Preferences
 Anoma’s documentation provides a few examples of how a user can customize their account’s validity predicate to add additional verifiers, such as not accepting any state changes that result in the user’s BTC balance going below 3 or requiring the signature of two private keys instead of one for transfers above a certain value [^14]. 
 
-In initial versions of Anoma, such as [v1](https://specs.anoma.net/main/releases/v1.html), validity predicate functions are public meaning when a user is customizing their validity predicates, Anoma will leak data around balance preferences and transaction threshold amounts that require greater security. In later versions, [v3](https://specs.anoma.net/main/releases/v3.html), once the full spec of Taiga is devised, developed, and released, it will be possible to have validate predicates with private functions that support multi-party transactions. 
+In initial versions of Anoma, such as [v1](https://specs.anoma.net/main/releases/v1.html), validity predicate functions are public, meaning when a user customizes their validity predicates, Anoma will leak data around balance preferences and transaction threshold amounts that require greater security. In later versions, [v3](https://specs.anoma.net/main/releases/v3.html), once the full spec of Taiga is devised, developed, and released, it will be possible to have validate predicates with private functions that support multi-party transactions. 
 
 Note: Namada's release path includes taking Anoma's v1 to mainnet, which does not yet fulfill on Anoma's mission of creating a “privacy-preserving protocol”.
 
