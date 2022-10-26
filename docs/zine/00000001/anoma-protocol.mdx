@@ -62,11 +62,11 @@ This design is Anoma's solution for scaling, where diverse chains in the Anoma n
 ### Intent Gossip & Matchmaking Subprotocol
 Anoma includes an intent gossip and matchmaking subprotocol which helps match and settle intents across multiple parties. Anoma does not require a double coincidence of wants, instead, as more intents are broadcast by *gossip nodes*, *matchmaking nodes* are able to help settle complex n-party trades atomically [^11]. For example, if the following intents are individually broadcast:
 
-* Alice wants to sell at most 8 $tokenA and buy at least 1 $tokenB
-* Bob wants to sell at most 1 $tokenB and buy at least 4 $tokenC
-* Carol wants to sell at most 4 $tokenC and buy at least 8 $tokenA
+* Alice wants to sell at most 8 `$tokenA` and buy at least 1 $tokenB
+* Bob wants to sell at most 1 `$tokenB` and buy at least 4 $tokenC
+* Carol wants to sell at most 4 `$tokenC` and buy at least 8 $tokenA
 
-Then the first matchmaking node to match the three intents can facilitate settlement of the transaction and receive a reward. Alice did not have to find someone who wanted her 8 $tokenA for 1 $tokenB. Instead, the intent was matched with another intent, which ultimately got her the asset she was looking for, and at the exchange rate within her limits.
+Then the first matchmaking node to match the three intents can facilitate settlement of the transaction and receive a reward. Alice did not have to find someone who wanted her 8 `$tokenA` for 1 `$tokenB`. Instead, the intent was matched with another intent, which ultimately got her the asset she was looking for, and at the exchange rate within her limits.
 
 Once an intent is shared with a gossip node, it is considered binding, although it is possible to include an *expiry time* within the intent for how long the intent is valid. However these standards are not requirements when it comes to the Anoma protocol: since the intent and gossip matchmaking system is considered a subprotocol of Anoma, it is possible for there to be even more specific subprotocols developed that are better catered toward different use cases.[^12]
 
@@ -127,9 +127,9 @@ Anoma predominantly describes and presents “transparent” Anoma in its whitep
 #### Public Validity Predicates Leak User Preferences
 Anoma’s documentation provides a few examples of how a user can customize their account’s validity predicate to add additional verifiers, such as not accepting any state changes that result in the user’s BTC balance going below 3 or requiring the signature of two private keys instead of one for transfers above a certain value [^14]. 
 
-In initial versions of Anoma, validity predicate functions are public meaning when a user is customizing their validity predicates, Anoma will leak data around balance preferences and transaction threshold amounts that require greater security. In future versions, once the full spec of Taiga is devised, developed, and released, it will be possible to have validate predicates with private functions that support multi-party transactions.
+In initial versions of Anoma, such as [v1](https://specs.anoma.net/main/releases/v1.html), validity predicate functions are public meaning when a user is customizing their validity predicates, Anoma will leak data around balance preferences and transaction threshold amounts that require greater security. In later versions, [v3](https://specs.anoma.net/main/releases/v3.html), once the full spec of Taiga is devised, developed, and released, it will be possible to have validate predicates with private functions that support multi-party transactions. 
 
-The [v3](https://specs.anoma.net/main/releases/v3.html) of Anoma is quite necessary to fulfill on the mission of creating a “privacy-preserving protocol”, so hopefully there is no mainnet Anoma until v3 is released, so the user experience can be well tailored to properly satisfy their mission.
+Note: Namada's release path includes taking Anoma's v1 to mainnet, which does not yet fulfill on Anoma's mission of creating a “privacy-preserving protocol”.
 
 #### Anoma Can Be Transparent and/or Private
 Compared to privacy layer 1 protocols like Aleo, Penumbra, and DarkFi, Anoma is not a fully shielded blockchain and supports both transparent transactions in addition to shielded transactions.

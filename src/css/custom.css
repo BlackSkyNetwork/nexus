@@ -135,6 +135,31 @@
 }
 
 @font-face {
+  font-family: 'Timeburner';
+  src: url('/static/fonts/Timeburner-xJB8.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Timeburner-Bold';
+  src: url('/static/fonts/TimeburnerBold-peGR.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: 'Aqala';
+  src: url('/static/fonts/Aqala-Display-Free.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+
+
+@font-face {
   font-family: 'Glitten';
   src: url('/static/fonts/Glitten-Regular.ttf') format('truetype'); 
   font-style: normal;
@@ -233,13 +258,14 @@
 .hero__subtitle {
   font-family: Inter, sans-serif;
   color: white;
-  font-size: 2.5em;
+  font-weight: 200;
+  font-size: 2.2em;
 }
 
 .hero__title {
-  font-family: masqualero-stencil, sans-serif;
+  font-family: Aqala, sans-serif;
   font-weight: 400;
-  font-size: 5.2em;
+  font-size: 6.2em;
 }
 
 
@@ -249,7 +275,7 @@
   }
 
   .hero__title {
-    font-size: 3.2em;
+    font-size: 4.2em;
   }
 
   .hero__subtitle {
@@ -278,16 +304,12 @@
 }
 
 .markdown h1:first-child{
-  font-family: "bluu", sans-serif;
+  font-family: "Timeburner", sans-serif;
   font-size: 3.4rem;
   letter-spacing: 0px;
   text-align: center;
   text-transform: uppercase;
   font-style: normal;
-}
-
-.markdown h1:first-child::first-letter{
-  font-family: "bluu";
 }
 
 
@@ -351,6 +373,9 @@ h6 {
 }
 
 @media screen and (max-width: 996px) {
+  p { 
+    font-size: 0.99rem;
+  }
   h1 {
     font-size: 2.8rem;
   }
@@ -419,14 +444,14 @@ p {
   background-color: var(--ifm-background-color);
 }
 .navbar__title {
-  font-family: masqualero-stencil, sans-serif;
-  font-weight: 400;
+  font-family: Aqala, sans-serif;
+  font-weight: 600;
   letter-spacing: 2px;
-  font-size: 170%;
+  font-size: 240%;
 }
 
 .hero .button {
-  font-family: 'bluu', sans-serif;
+  font-family: 'Timeburner', sans-serif;
   font-size: 140%;
   border-radius: 2px;
   background-color: var(--ifm-background-color);
