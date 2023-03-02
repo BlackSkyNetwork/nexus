@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkwiki=self.webpackChunkwiki||[]).push([[2684],{6428:function(e){e.exports=JSON.parse('{"name":"Poetry","permalink":"/tags/poetry","docs":[{"id":"zine/00000000/take-me-back","title":"Take Me Back","description":"By Stellar Magnet","permalink":"/zine/00000000/take-me-back"}],"allTagsPath":"/tags"}')}}]);
