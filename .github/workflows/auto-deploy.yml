@@ -6,5 +6,6 @@ on:
       - main # Set the branch you want to deploy from
 
 jobs:
-  call-another-reusable:
-    uses: actions/pages-build-deployment@v1
+  runs-on: ubuntu-latest
+  steps:
+    - uses: actions/pages-build-deployment@v1
