@@ -17,10 +17,14 @@ jobs:
         with:
           node-version: 14 # Use a specific version of Node.js (Docusaurus v2 requires Node.js 12+)
 
+      - name: Install Yarn
+        run: |
+          npm install -g yarn
+
       - name: Install dependencies and build
         run: |
-          npm ci
-          npm run build
+          yarn install
+          yarn build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
