@@ -1,0 +1,10 @@
+name: Deploy on push to main
+
+on:
+  push:
+    branches:
+      - main # Set the branch you want to deploy from
+
+jobs:
+  call-another-reusable:
+    uses: actions/pages-build-deployment@v1
