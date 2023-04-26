@@ -1,0 +1,23 @@
+---
+sidebar_position: 1
+sidebar_label: 'Ephemeral Addresses'
+description: 'Ephemeral Addresses for Public Interactions'
+image: /img/00000001/banner_issue01.png
+tags: [Post-Web]
+---
+
+# Ephemeral Addresses for Public Interactions
+<span class="doc-subtitle">Post-Web Pattern</span>
+<br/>
+
+*NOTE: This pattern is a work in progress and needs to be further clarified and enhanced.*
+
+**Overview**: In a wallet interface designed for privacy, use a default address as the primary "indexed address" and reserve ephemeral addresses for single-use scenarios, especially when engaging in public interactions, such as incoming cross-chain transfers.
+
+**Details**: The wallet interface should display the default address for general use while keeping ephemeral addresses hidden or less accessible. These ephemeral addresses are intended for one-time use in more publicly visible transactions, such as incoming cross-chain transfers. The wallet interface should be designed to abstract ephemeral address usage from the user and avoid using the default address in public interactions.
+
+**Benefits**: By associating public transactions with ephemeral addresses, any future actions using those funds within the system remain completely shielded, enhancing privacy.
+
+**Technical Dependency**: The address key structure must be similar to the Zcash Sapling design to implement this pattern effectively.
+
+**Example**: This pattern is inspired by [Penumbra's design](../../zine/00000001/penumbra-protocol), which employs ephemeral addresses for specific public interactions.

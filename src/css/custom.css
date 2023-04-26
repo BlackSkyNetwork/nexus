@@ -568,10 +568,21 @@ iframe {
 .center p{
   margin-bottom: 0.5rem;
 }
+
 .caption{
   display: block;
   text-align: center;
   font-family: var(--ifm-font-family-base);
+  font-weight: 400;
+  font-size: 0.9rem;
+  text-rendering: optimizeLegibility;
+}
+
+.disclaimer{
+  display: block;
+  text-align: left;
+  font-family: forma-djr-deck, sans-serif;
+  letter-spacing: 1px;
   font-weight: 400;
   font-size: 0.9rem;
   text-rendering: optimizeLegibility;
